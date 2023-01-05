@@ -1,54 +1,60 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Laura Bejder's Incredible Website</title>
-    <link 
-    rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <style>
-      .content figure {
-        margin-left: 0;
-        margin-right: 0;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Laura Bejder's Incredible Website</title>
+  <link 
+  rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  />
+  <style>
+    .content figure {
+      margin-left: 0;
+      margin-right: 0;
 
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
     <!--Introductory paragraph -->
-    <div class="container">
-      <h1 class="title">Hi, I'm Laura Bejder!</h1>
+    <section class="hero">
+      <div class="hero-body">
+        <p class="title">
+          Hi, I'm Laura Bejder!
+        </p>
+        <p class="subtitle">
+        I am a ... I am interested in ... </p>
+        <p class="subtitle"> Something else about what I do </p>
+      </div>
+    </section>
+    
+    <section class="section">
+      <!--Social media links -->
+      <div class="contact">
+        <a href="https://www.linkedin.com/in/laura-bejder-jensen-812536171/" target="_blank">
+          <img src="icons/linkedin.png" class="icon">
+        </a>
+        <a href="mailto:lj2569@columbia.edu?subject=[GitHub]%20🔥%20Reaching%20out&body=Hi%20Laura%2C%0A%0A" target="_blank">
+          <img src="icons/mail.png" class="icon">
+        </a>
+        <a href="https://twitter.com/laurabejder/" target="_blank">
+          <img src="icons/twitter.png" class="icon">
+        </a>
+        <a href="https://github.com/laurabejder" target="_blank">
+          <img src="icons/github.png" class="icon">
+        </a>
+      </div>
 
-      <p class="subtitle"> I am a ... I am interested in ... </p>
-      <p class="subtitle"> Something else about what I do </p>
-    </div>
-
-    <!--Social media links -->
-    <div class="contact">
-      <a href="https://www.linkedin.com/in/laura-bejder-jensen-812536171/" target="_blank">
-        <img src="icons/linkedin.png" class="icon">
-      </a>
-      <a href="mailto:lj2569@columbia.edu?subject=[GitHub]%20🔥%20Reaching%20out&body=Hi%20Laura%2C%0A%0A" target="_blank">
-        <img src="icons/mail.png" class="icon">
-      </a>
-      <a href="https://twitter.com/laurabejder/" target="_blank">
-        <img src="icons/twitter.png" class="icon">
-      </a>
-      <a href="https://github.com/laurabejder" target="_blank">
-        <img src="icons/github.png" class="icon">
-      </a>
-    </div>
-
-    <div class="journalism">
-      <div class="category-title">Journalism</div> 
+      <div class="journalism">
+        <div class="category-title">Journalism</div> 
         <div class="columns is-multiline is-mobile content">
           <div class="column is-one-third">
             <h3>
               <a href="https://columbianewsservice.com/2022/10/25/immigrants-at-a-brooklyn-street-corner-we-are-waiting-for-the-job-that-falls/">
-                Immigrants at a Brooklyn Street Corner: "We are Waiting for the Job that Falls"</a>
+              Immigrants at a Brooklyn Street Corner: "We are Waiting for the Job that Falls"</a>
             </h3>
             <p> A little blurb about this story</p>
             <div class="tags">
@@ -86,25 +92,25 @@
               </div>
               <div class="card-content">
                 <div class="media">
-                <div class="media-content">
-                  <p class="title is-4">
-                    <a href="https://columbianewsservice.com/2022/10/25/immigrants-at-a-brooklyn-street-corner-we-are-waiting-for-the-job-that-falls/">
-                    Immigrants at a Brooklyn Street Corner: "We are Waiting for the Job that Falls"</a>
-                  </p>
+                  <div class="media-content">
+                    <p class="title is-4">
+                      <a href="https://columbianewsservice.com/2022/10/25/immigrants-at-a-brooklyn-street-corner-we-are-waiting-for-the-job-that-falls/">
+                      Immigrants at a Brooklyn Street Corner: "We are Waiting for the Job that Falls"</a>
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
-                <div class="tags">
-                  <span class="tag is-link is-light">tag label 1</span>
-                  <span class="tag is-danger is-light">tag label 2</span>
-                  <span class="tag is-warning is-light">tag label 3</span>
+                <div class="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus nec iaculis mauris.
+                  <div class="tags">
+                    <span class="tag is-link is-light">tag label 1</span>
+                    <span class="tag is-danger is-light">tag label 2</span>
+                    <span class="tag is-warning is-light">tag label 3</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
             <h3>Fourth article
             </h3>
             <p> A little blurb about this story</p>
@@ -135,7 +141,8 @@
             </div>
           </div>
         </div>
-    </div>
-    </div>
-  </body>
+      </div>
+    </section>
+  </div>
+</body>
 </html>
