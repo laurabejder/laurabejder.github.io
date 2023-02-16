@@ -29,11 +29,6 @@
           text-decoration: underline;
         }
 
-        .subhead {
-          font-weight: bold;
-          font-size: 20px; 
-        }
-
         .banner {
           background-image: url("image4.png");
           background-size: cover;
@@ -46,7 +41,7 @@
           padding-top: 36vh;
         }
 
-        h1.headline {
+        h1.title {
           font-size: 3.5rem;
           line-height: 1.1;
           margin-bottom: 0.25rem;
@@ -56,14 +51,32 @@
           max-width: 800px;
         }
 
+        h2.subtitle {
+          font-weight: bold;
+          font-size: 20px;
+          color: white; 
+        }
+
+        .has-bg-img { 
+          background: url('image4.png');
+          center center; 
+          background-size:cover; 
+        }
+
+        .hero {
+          max-height: 100vh;
+        }
 
     </style>
   </head>
   <body>
-  <div class="banner">
-    <h1 class="headline">Medical Knitting: How Breast Cancer Survivors Handle Mastectomies One Knitted Knocker at the Time</h1>
-    <h3 class="subhead"> Subheadline </h3>
-  </div>
+
+  <section class="hero is-large has-bg-img"> 
+    <div class="hero-body"> 
+        <h1 class="title">Medical Knitting: How Breast Cancer Survivors Handle Mastectomies One Knitted Knocker at the Time</h1> 
+        <h2 class="subtitle">Subtitle 3</h2> 
+    </div> 
+  </section>
   <section class="section">
     <div class="container">
       <div class="content">
@@ -79,7 +92,9 @@
 
         <p>Since then, the concept and recipe of knitted knockers have spread across the internet. Today, it is the most popular kind of project in the medical knitting category on the community knitting website <a href="https://www.ravelry.com/patterns/search#pc=medical&sort=popularity&view=captioned_thumbs" target="_blank">Ravelry</a>.</p>
 
-        
+        <p> Ravelry allows knitters to register when they have completed a project using a particular recipe. An analysis of the ‘medical knitting’ subcategory shows that knitted knockers make up more than 82 percent of all completed projects in that category. At the time of writing, 4744 finished knockers are registered at Ravelry.</p>
+
+        <p>[Visualization]</p> 
       </div>
     </div>
   </section>
