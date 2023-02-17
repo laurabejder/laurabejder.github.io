@@ -1,1650 +1,1679 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Medical Knitting: How Breast Cancer Survivors Handle Mastectomies One Knitted Knocker at a Time</title>
-    <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.cdnfonts.com/css/roboto-condensed" rel="stylesheet">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Medical Knitting: How Breast Cancer Survivors Handle Mastectomies One Knitted Knocker at a Time</title>
+      <link rel="icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+      <link href="https://fonts.cdnfonts.com/css/roboto-condensed" rel="stylesheet">
 
-    <style>
-        .container {
-            /* Remove the line below if you want a wider page */
-          max-width: 700px !important;
-          color: #000000;
-          font-family: Georgia;
-        }
+      <style>
+          .container {
+              /* Remove the line below if you want a wider page */
+            max-width: 700px !important;
+            color: #000000;
+            font-family: Georgia;
+          }
 
-        img {
-          display: block;
-          width:700px;
-          margin: 0 auto;
-          transition: 0.3s;
-        }
+          img {
+            display: block;
+            width:700px;
+            margin: 0 auto;
+            transition: 0.3s;
+          }
 
-        a {
-          color: #000000;
-          text-decoration: underline;
-        }
+          a {
+            color: #000000;
+            text-decoration: underline;
+          }
 
-        h1.title {
-          font-size: 3rem;
-          line-height: 1.1;
-          margin-bottom: 0.25rem;
-          margin-top: 0.4rem;
-          font-weight: 800;
-          color: white;
-          max-width: 800px;
-        }
+          h1.title {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 0.4rem;
+            font-weight: 800;
+            color: white;
+            max-width: 800px;
+          }
 
-        h2.subtitle {
-          font-weight: bold;
-          font-size: 20px;
-          color: white; 
-        }
+          h2.subtitle {
+            font-weight: bold;
+            font-size: 20px;
+            color: white; 
+          }
 
-        .has-bg-img { 
-          background: url('image4.png');
-          center center; 
-          background-size:cover; 
-        }
+          .has-bg-img { 
+            background: url('image4.png');
+            center center; 
+            background-size:cover; 
+          }
 
-        .hero {
-          max-height: 100vh;
-        }
+          .hero {
+            max-height: 100vh;
+          }
 
-    </style>
+          .byline {
+            padding-top: 0px;
+            padding-bottom: 15px;
+          }
 
-<script type="text/javascript">
-    (function() {
-        // only want one resizer on the page
-        if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
-        document.documentElement.className += " g-resizer-v3-init";
-        // require IE9+
-        if (!("querySelector" in document)) return;
-        function resizer() {
-            var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
-                widthById = {};
-            elements.forEach(function(el) {
-                var parent = el.parentNode,
-                    width = widthById[parent.id] || parent.getBoundingClientRect().width,
-                    minwidth = el.getAttribute("data-min-width"),
-                    maxwidth = el.getAttribute("data-max-width");
-                widthById[parent.id] = width;
-                if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
-                    el.style.display = "block";
-                } else {
-                    el.style.display = "none";
-                }
-            });
-            try {
-                if (window.parent && window.parent.$) {
-                    window.parent.$("body").trigger("resizedcontent", [window]);
-                }
-                if (window.require) {
-                    require(['foundation/main'], function() {
-                        require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
-                            AppCommunicator.triggerResize();
-                        });
-                    });
-                }
-            } catch(e) { console.log(e); }
-        }
-        document.addEventListener('DOMContentLoaded', resizer);
-        // feel free to replace throttle with _.throttle, if available
-        window.addEventListener('resize', throttle(resizer, 200));        
-        function throttle(func, wait) {
-            // from underscore.js
-            var _now = Date.now || function() { return new Date().getTime(); },
-                context, args, result, timeout = null, previous = 0;
-            var later = function() {
-                previous = _now();
-                timeout = null;
-                result = func.apply(context, args);
-                if (!timeout) context = args = null;
-            };
-            return function() {
-                var now = _now(), remaining = wait - (now - previous);
-                context = this;
-                args = arguments;
-                if (remaining <= 0 || remaining > wait) {
-                    if (timeout) {
-                        clearTimeout(timeout);
-                        timeout = null;
-                    }
-                    previous = now;
-                    result = func.apply(context, args);
-                    if (!timeout) context = args = null;
-                } else if (!timeout && options.trailing !== false) {
-                    timeout = setTimeout(later, remaining);
-                }
-                return result;
-            };
-        }
-       
-    })();
-</script>
+          .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+            color: white;
+            font-family: Georgia;
+            font-size: 12px;
+          }
 
-<!-- knitting categories visual -->
-<style media="screen,print">
-  #g-bubbles-box ,
-  #g-bubbles-box .g-artboard {
-    margin:0 auto;
-  }
-  #g-bubbles-box p {
-    margin:0;
-  }
-  #g-bubbles-box .g-aiAbs {
-    position:absolute;
-  }
-  #g-bubbles-box .g-aiImg {
-    position:absolute;
-    top:0;
-    display:block;
-    width:100% !important;
-  }
-  #g-bubbles-box .g-aiSymbol {
-    position: absolute;
-    box-sizing: border-box;
-  }
-  #g-bubbles-box .g-aiPointText p { white-space: nowrap; }
-  #g-bubbles-Artboard_1 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-bubbles-Artboard_1 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:17px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:14px;
-    text-align:left;
-    color:rgb(102,102,102);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-bubbles-Artboard_1 .g-pstyle0 {
-    font-weight:bold;
-    line-height:22px;
-    height:22px;
-    font-size:18px;
-    color:rgb(0,0,0);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle1 {
-    height:17px;
-  }
-  #g-bubbles-Artboard_1 .g-pstyle2 {
-    font-weight:bold;
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-    text-align:center;
-    color:rgb(119,119,119);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle3 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    text-align:center;
-  }
-  #g-bubbles-Artboard_1 .g-pstyle4 {
-    line-height:12px;
-    height:12px;
-    font-size:10px;
-    text-align:center;
-  }
-  #g-bubbles-Artboard_1 .g-pstyle5 {
-    line-height:16px;
-    height:16px;
-    font-size:13px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle6 {
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle7 {
-    line-height:37px;
-    height:37px;
-    font-size:31px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle8 {
-    line-height:29px;
-    height:29px;
-    font-size:24px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle9 {
-    line-height:19px;
-    height:19px;
-    font-size:16px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle10 {
-    line-height:8px;
-    height:8px;
-    font-size:7px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle11 {
-    line-height:6px;
-    height:6px;
-    font-size:5px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_1 .g-pstyle12 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    color:rgb(136,136,136);
-  }
-  #g-bubbles-Artboard_1 .g-cstyle0 {
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_1 .g-cstyle1 {
-    letter-spacing:-0.02em;
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_1 .g-cstyle2 {
-    letter-spacing:-0.015em;
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_1 .g-cstyle3 {
-    letter-spacing:-0.039em;
-  }
-  #g-bubbles-Artboard_1 .g-cstyle4 {
-    color:rgb(119,119,119);
-  }
-  #g-bubbles-Artboard_1 .g-cstyle5 {
-    letter-spacing:0.014em;
-  }
-  #g-bubbles-Artboard_1 .g-cstyle6 {
-    letter-spacing:0.029em;
-  }
-  #g-bubbles-Artboard_3 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-bubbles-Artboard_3 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:16px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:13px;
-    text-align:left;
-    color:rgb(102,102,102);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-bubbles-Artboard_3 .g-pstyle0 {
-    font-weight:bold;
-    line-height:19px;
-    height:19px;
-    font-size:16px;
-    color:rgb(0,0,0);
-  }
-  #g-bubbles-Artboard_3 .g-pstyle1 {
-    height:16px;
-  }
-  #g-bubbles-Artboard_3 .g-pstyle2 {
-    line-height:9px;
-    height:9px;
-    font-size:8px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_3 .g-pstyle3 {
-    line-height:8px;
-    height:8px;
-    font-size:7px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_3 .g-pstyle4 {
-    line-height:11px;
-    height:11px;
-    font-size:10px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_3 .g-pstyle5 {
-    line-height:9px;
-    height:9px;
-    font-size:7px;
-    text-align:center;
-  }
-  #g-bubbles-Artboard_3 .g-pstyle6 {
-    line-height:7px;
-    height:7px;
-    font-size:6px;
-    text-align:center;
-  }
-  #g-bubbles-Artboard_3 .g-pstyle7 {
-    line-height:5px;
-    height:5px;
-    font-size:4px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_3 .g-pstyle8 {
-    line-height:4px;
-    height:4px;
-    font-size:3px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_3 .g-pstyle9 {
-    line-height:22px;
-    height:22px;
-    font-size:18px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_3 .g-pstyle10 {
-    line-height:17px;
-    height:17px;
-    font-size:14px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_3 .g-pstyle11 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    color:rgb(136,136,136);
-  }
-  #g-bubbles-Artboard_3 .g-cstyle0 {
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_3 .g-cstyle1 {
-    letter-spacing:-0.02em;
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_3 .g-cstyle2 {
-    letter-spacing:-0.015em;
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_3 .g-cstyle3 {
-    letter-spacing:-0.039em;
-  }
-  #g-bubbles-Artboard_3 .g-cstyle4 {
-    font-size:14px;
-    color:rgb(119,119,119);
-  }
-  #g-bubbles-Artboard_3 .g-cstyle5 {
-    letter-spacing:0.014em;
-  }
-  #g-bubbles-Artboard_3 .g-cstyle6 {
-    letter-spacing:0.029em;
-  }
-  #g-bubbles-Artboard_6 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-bubbles-Artboard_6 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:16px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:13px;
-    text-align:left;
-    color:rgb(102,102,102);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-bubbles-Artboard_6 .g-pstyle0 {
-    font-weight:bold;
-    line-height:22px;
-    height:22px;
-    font-size:18px;
-    color:rgb(0,0,0);
-  }
-  #g-bubbles-Artboard_6 .g-pstyle1 {
-    height:16px;
-  }
-  #g-bubbles-Artboard_6 .g-pstyle2 {
-    line-height:11px;
-    height:11px;
-    font-size:9px;
-    text-align:center;
-  }
-  #g-bubbles-Artboard_6 .g-pstyle3 {
-    line-height:9px;
-    height:9px;
-    font-size:8px;
-    text-align:center;
-  }
-  #g-bubbles-Artboard_6 .g-pstyle4 {
-    line-height:12px;
-    height:12px;
-    font-size:10px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_6 .g-pstyle5 {
-    line-height:10px;
-    height:10px;
-    font-size:9px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_6 .g-pstyle6 {
-    line-height:29px;
-    height:29px;
-    font-size:24px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_6 .g-pstyle7 {
-    line-height:23px;
-    height:23px;
-    font-size:19px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_6 .g-pstyle8 {
-    line-height:15px;
-    height:15px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_6 .g-pstyle9 {
-    line-height:7px;
-    height:7px;
-    font-size:5px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_6 .g-pstyle10 {
-    line-height:5px;
-    height:5px;
-    font-size:4px;
-    text-align:center;
-    color:rgb(255,255,255);
-  }
-  #g-bubbles-Artboard_6 .g-pstyle11 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    color:rgb(136,136,136);
-  }
-  #g-bubbles-Artboard_6 .g-cstyle0 {
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_6 .g-cstyle1 {
-    letter-spacing:-0.02em;
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_6 .g-cstyle2 {
-    letter-spacing:-0.015em;
-    color:rgb(221,28,119);
-  }
-  #g-bubbles-Artboard_6 .g-cstyle3 {
-    letter-spacing:-0.039em;
-  }
-  #g-bubbles-Artboard_6 .g-cstyle4 {
-    font-size:14px;
-    color:rgb(119,119,119);
-  }
-  #g-bubbles-Artboard_6 .g-cstyle5 {
-    letter-spacing:0.014em;
-  }
-  #g-bubbles-Artboard_6 .g-cstyle6 {
-    letter-spacing:0.029em;
-  }
+      </style>
 
-</style>
+  <script type="text/javascript">
+      (function() {
+          // only want one resizer on the page
+          if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+          document.documentElement.className += " g-resizer-v3-init";
+          // require IE9+
+          if (!("querySelector" in document)) return;
+          function resizer() {
+              var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                  widthById = {};
+              elements.forEach(function(el) {
+                  var parent = el.parentNode,
+                      width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                      minwidth = el.getAttribute("data-min-width"),
+                      maxwidth = el.getAttribute("data-max-width");
+                  widthById[parent.id] = width;
+                  if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                      el.style.display = "block";
+                  } else {
+                      el.style.display = "none";
+                  }
+              });
+              try {
+                  if (window.parent && window.parent.$) {
+                      window.parent.$("body").trigger("resizedcontent", [window]);
+                  }
+                  if (window.require) {
+                      require(['foundation/main'], function() {
+                          require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                              AppCommunicator.triggerResize();
+                          });
+                      });
+                  }
+              } catch(e) { console.log(e); }
+          }
+          document.addEventListener('DOMContentLoaded', resizer);
+          // feel free to replace throttle with _.throttle, if available
+          window.addEventListener('resize', throttle(resizer, 200));        
+          function throttle(func, wait) {
+              // from underscore.js
+              var _now = Date.now || function() { return new Date().getTime(); },
+                  context, args, result, timeout = null, previous = 0;
+              var later = function() {
+                  previous = _now();
+                  timeout = null;
+                  result = func.apply(context, args);
+                  if (!timeout) context = args = null;
+              };
+              return function() {
+                  var now = _now(), remaining = wait - (now - previous);
+                  context = this;
+                  args = arguments;
+                  if (remaining <= 0 || remaining > wait) {
+                      if (timeout) {
+                          clearTimeout(timeout);
+                          timeout = null;
+                      }
+                      previous = now;
+                      result = func.apply(context, args);
+                      if (!timeout) context = args = null;
+                  } else if (!timeout && options.trailing !== false) {
+                      timeout = setTimeout(later, remaining);
+                  }
+                  return result;
+              };
+          }
+         
+      })();
+  </script>
 
-<!-- price visual -->
-<style media="screen,print">
-  #g-prices-box ,
-  #g-prices-box .g-artboard {
-    margin:0 auto;
-  }
-  #g-prices-box p {
-    margin:0;
-  }
-  #g-prices-box .g-aiAbs {
-    position:absolute;
-  }
-  #g-prices-box .g-aiImg {
-    position:absolute;
-    top:0;
-    display:block;
-    width:100% !important;
-  }
-  #g-prices-box .g-aiSymbol {
-    position: absolute;
-    box-sizing: border-box;
-  }
-  #g-prices-box .g-aiPointText p { white-space: nowrap; }
-  #g-prices-Artboard_1 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-prices-Artboard_1 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:17px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:14px;
-    text-align:left;
-    color:rgb(102,102,102);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-prices-Artboard_1 .g-pstyle0 {
-    font-weight:bold;
-    line-height:22px;
-    height:22px;
-    font-size:18px;
-    color:rgb(0,0,0);
-  }
-  #g-prices-Artboard_1 .g-pstyle1 {
-    height:17px;
-  }
-  #g-prices-Artboard_1 .g-pstyle2 {
-    font-weight:bold;
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-    color:rgb(119,119,119);
-  }
-  #g-prices-Artboard_1 .g-pstyle3 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    color:rgb(77,77,77);
-  }
-  #g-prices-Artboard_1 .g-pstyle4 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    color:rgb(136,136,136);
-  }
-  #g-prices-Artboard_1 .g-cstyle0 {
-    letter-spacing:-0.02em;
-  }
-  #g-prices-Artboard_1 .g-cstyle1 {
-    letter-spacing:-0.015em;
-  }
-  #g-prices-Artboard_1 .g-cstyle2 {
-    letter-spacing:-0.01em;
-    color:rgb(221,28,119);
-  }
-  #g-prices-Artboard_1 .g-cstyle3 {
-    color:rgb(221,28,119);
-  }
-  #g-prices-Artboard_1 .g-cstyle4 {
-    letter-spacing:-0.039em;
-  }
-  #g-prices-Artboard_1 .g-cstyle5 {
-    letter-spacing:0.014em;
-  }
-  #g-prices-Artboard_1 .g-cstyle6 {
-    letter-spacing:-0.019em;
-  }
-  #g-prices-Artboard_1 .g-cstyle7 {
-    letter-spacing:-0.014em;
-  }
-  #g-prices-Artboard_1 .g-cstyle8 {
-    font-weight:500;
-    font-size:12px;
-    color:rgb(0,0,0);
-  }
-  #g-prices-Artboard_1 .g-cstyle9 {
-    letter-spacing:-0.025em;
-  }
-  #g-prices-Artboard_1 .g-cstyle10 {
-    letter-spacing:0.029em;
-  }
-  #g-prices-Artboard_1 .g-cstyle11 {
-    letter-spacing:-0.05em;
-  }
-  #g-prices-Artboard_3 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-prices-Artboard_3 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:17px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:14px;
-    text-align:left;
-    color:rgb(102,102,102);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-prices-Artboard_3 .g-pstyle0 {
-    font-weight:bold;
-    line-height:19px;
-    height:19px;
-    font-size:16px;
-    color:rgb(0,0,0);
-  }
-  #g-prices-Artboard_3 .g-pstyle1 {
-    height:17px;
-  }
-  #g-prices-Artboard_3 .g-pstyle2 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    color:rgb(77,77,77);
-  }
-  #g-prices-Artboard_3 .g-pstyle3 {
-    line-height:16px;
-    height:16px;
-    font-size:13px;
-    color:rgb(136,136,136);
-  }
-  #g-prices-Artboard_3 .g-cstyle0 {
-    letter-spacing:-0.02em;
-  }
-  #g-prices-Artboard_3 .g-cstyle1 {
-    letter-spacing:-0.015em;
-  }
-  #g-prices-Artboard_3 .g-cstyle2 {
-    letter-spacing:-0.01em;
-    color:rgb(221,28,119);
-  }
-  #g-prices-Artboard_3 .g-cstyle3 {
-    color:rgb(221,28,119);
-  }
-  #g-prices-Artboard_3 .g-cstyle4 {
-    letter-spacing:-0.039em;
-  }
-  #g-prices-Artboard_3 .g-cstyle5 {
-    letter-spacing:0.014em;
-  }
-  #g-prices-Artboard_3 .g-cstyle6 {
-    letter-spacing:-0.019em;
-  }
-  #g-prices-Artboard_3 .g-cstyle7 {
-    letter-spacing:-0.014em;
-  }
-  #g-prices-Artboard_3 .g-cstyle8 {
-    letter-spacing:1.812em;
-  }
-  #g-prices-Artboard_3 .g-cstyle9 {
-    letter-spacing:1.256em;
-  }
-  #g-prices-Artboard_3 .g-cstyle10 {
-    letter-spacing:1.255em;
-  }
-  #g-prices-Artboard_3 .g-cstyle11 {
-    letter-spacing:-0.025em;
-  }
-  #g-prices-Artboard_3 .g-cstyle12 {
-    letter-spacing:0.029em;
-  }
-  #g-prices-Artboard_3 .g-cstyle13 {
-    letter-spacing:-0.05em;
-  }
-  #g-prices-Artboard_5 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-prices-Artboard_5 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:17px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:14px;
-    text-align:left;
-    color:rgb(0,0,0);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-prices-Artboard_5 .g-pstyle0 {
-    font-weight:bold;
-    line-height:22px;
-    height:22px;
-    font-size:18px;
-  }
-  #g-prices-Artboard_5 .g-pstyle1 {
-    height:17px;
-  }
-  #g-prices-Artboard_5 .g-pstyle2 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    color:rgb(77,77,77);
-  }
-  #g-prices-Artboard_5 .g-pstyle3 {
-    line-height:16px;
-    height:16px;
-    font-size:13px;
-    color:rgb(136,136,136);
-  }
-  #g-prices-Artboard_5 .g-cstyle0 {
-    letter-spacing:-0.02em;
-  }
-  #g-prices-Artboard_5 .g-cstyle1 {
-    letter-spacing:-0.015em;
-  }
-  #g-prices-Artboard_5 .g-cstyle2 {
-    letter-spacing:-0.01em;
-    color:rgb(221,28,119);
-  }
-  #g-prices-Artboard_5 .g-cstyle3 {
-    color:rgb(221,28,119);
-  }
-  #g-prices-Artboard_5 .g-cstyle4 {
-    letter-spacing:-0.039em;
-  }
-  #g-prices-Artboard_5 .g-cstyle5 {
-    letter-spacing:0.014em;
-  }
-  #g-prices-Artboard_5 .g-cstyle6 {
-    letter-spacing:-0.019em;
-  }
-  #g-prices-Artboard_5 .g-cstyle7 {
-    letter-spacing:-0.014em;
-  }
-  #g-prices-Artboard_5 .g-cstyle8 {
-    letter-spacing:4.271em;
-  }
-  #g-prices-Artboard_5 .g-cstyle9 {
-    letter-spacing:3.715em;
-  }
-  #g-prices-Artboard_5 .g-cstyle10 {
-    letter-spacing:3.714em;
-  }
-  #g-prices-Artboard_5 .g-cstyle11 {
-    letter-spacing:-0.025em;
-  }
-  #g-prices-Artboard_5 .g-cstyle12 {
-    letter-spacing:0.029em;
-  }
-  #g-prices-Artboard_5 .g-cstyle13 {
-    letter-spacing:-0.05em;
-  }
+  <!-- knitting categories visual -->
+  <style media="screen,print">
+    #g-bubbles-box ,
+    #g-bubbles-box .g-artboard {
+      margin:0 auto;
+    }
+    #g-bubbles-box p {
+      margin:0;
+    }
+    #g-bubbles-box .g-aiAbs {
+      position:absolute;
+    }
+    #g-bubbles-box .g-aiImg {
+      position:absolute;
+      top:0;
+      display:block;
+      width:100% !important;
+    }
+    #g-bubbles-box .g-aiSymbol {
+      position: absolute;
+      box-sizing: border-box;
+    }
+    #g-bubbles-box .g-aiPointText p { white-space: nowrap; }
+    #g-bubbles-Artboard_1 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-bubbles-Artboard_1 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:17px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:14px;
+      text-align:left;
+      color:rgb(102,102,102);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-bubbles-Artboard_1 .g-pstyle0 {
+      font-weight:bold;
+      line-height:22px;
+      height:22px;
+      font-size:18px;
+      color:rgb(0,0,0);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle1 {
+      height:17px;
+    }
+    #g-bubbles-Artboard_1 .g-pstyle2 {
+      font-weight:bold;
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+      text-align:center;
+      color:rgb(119,119,119);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle3 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      text-align:center;
+    }
+    #g-bubbles-Artboard_1 .g-pstyle4 {
+      line-height:12px;
+      height:12px;
+      font-size:10px;
+      text-align:center;
+    }
+    #g-bubbles-Artboard_1 .g-pstyle5 {
+      line-height:16px;
+      height:16px;
+      font-size:13px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle6 {
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle7 {
+      line-height:37px;
+      height:37px;
+      font-size:31px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle8 {
+      line-height:29px;
+      height:29px;
+      font-size:24px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle9 {
+      line-height:19px;
+      height:19px;
+      font-size:16px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle10 {
+      line-height:8px;
+      height:8px;
+      font-size:7px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle11 {
+      line-height:6px;
+      height:6px;
+      font-size:5px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_1 .g-pstyle12 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      color:rgb(136,136,136);
+    }
+    #g-bubbles-Artboard_1 .g-cstyle0 {
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_1 .g-cstyle1 {
+      letter-spacing:-0.02em;
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_1 .g-cstyle2 {
+      letter-spacing:-0.015em;
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_1 .g-cstyle3 {
+      letter-spacing:-0.039em;
+    }
+    #g-bubbles-Artboard_1 .g-cstyle4 {
+      color:rgb(119,119,119);
+    }
+    #g-bubbles-Artboard_1 .g-cstyle5 {
+      letter-spacing:0.014em;
+    }
+    #g-bubbles-Artboard_1 .g-cstyle6 {
+      letter-spacing:0.029em;
+    }
+    #g-bubbles-Artboard_3 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-bubbles-Artboard_3 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:16px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:13px;
+      text-align:left;
+      color:rgb(102,102,102);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-bubbles-Artboard_3 .g-pstyle0 {
+      font-weight:bold;
+      line-height:19px;
+      height:19px;
+      font-size:16px;
+      color:rgb(0,0,0);
+    }
+    #g-bubbles-Artboard_3 .g-pstyle1 {
+      height:16px;
+    }
+    #g-bubbles-Artboard_3 .g-pstyle2 {
+      line-height:9px;
+      height:9px;
+      font-size:8px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_3 .g-pstyle3 {
+      line-height:8px;
+      height:8px;
+      font-size:7px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_3 .g-pstyle4 {
+      line-height:11px;
+      height:11px;
+      font-size:10px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_3 .g-pstyle5 {
+      line-height:9px;
+      height:9px;
+      font-size:7px;
+      text-align:center;
+    }
+    #g-bubbles-Artboard_3 .g-pstyle6 {
+      line-height:7px;
+      height:7px;
+      font-size:6px;
+      text-align:center;
+    }
+    #g-bubbles-Artboard_3 .g-pstyle7 {
+      line-height:5px;
+      height:5px;
+      font-size:4px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_3 .g-pstyle8 {
+      line-height:4px;
+      height:4px;
+      font-size:3px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_3 .g-pstyle9 {
+      line-height:22px;
+      height:22px;
+      font-size:18px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_3 .g-pstyle10 {
+      line-height:17px;
+      height:17px;
+      font-size:14px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_3 .g-pstyle11 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      color:rgb(136,136,136);
+    }
+    #g-bubbles-Artboard_3 .g-cstyle0 {
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_3 .g-cstyle1 {
+      letter-spacing:-0.02em;
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_3 .g-cstyle2 {
+      letter-spacing:-0.015em;
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_3 .g-cstyle3 {
+      letter-spacing:-0.039em;
+    }
+    #g-bubbles-Artboard_3 .g-cstyle4 {
+      font-size:14px;
+      color:rgb(119,119,119);
+    }
+    #g-bubbles-Artboard_3 .g-cstyle5 {
+      letter-spacing:0.014em;
+    }
+    #g-bubbles-Artboard_3 .g-cstyle6 {
+      letter-spacing:0.029em;
+    }
+    #g-bubbles-Artboard_6 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-bubbles-Artboard_6 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:16px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:13px;
+      text-align:left;
+      color:rgb(102,102,102);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-bubbles-Artboard_6 .g-pstyle0 {
+      font-weight:bold;
+      line-height:22px;
+      height:22px;
+      font-size:18px;
+      color:rgb(0,0,0);
+    }
+    #g-bubbles-Artboard_6 .g-pstyle1 {
+      height:16px;
+    }
+    #g-bubbles-Artboard_6 .g-pstyle2 {
+      line-height:11px;
+      height:11px;
+      font-size:9px;
+      text-align:center;
+    }
+    #g-bubbles-Artboard_6 .g-pstyle3 {
+      line-height:9px;
+      height:9px;
+      font-size:8px;
+      text-align:center;
+    }
+    #g-bubbles-Artboard_6 .g-pstyle4 {
+      line-height:12px;
+      height:12px;
+      font-size:10px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_6 .g-pstyle5 {
+      line-height:10px;
+      height:10px;
+      font-size:9px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_6 .g-pstyle6 {
+      line-height:29px;
+      height:29px;
+      font-size:24px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_6 .g-pstyle7 {
+      line-height:23px;
+      height:23px;
+      font-size:19px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_6 .g-pstyle8 {
+      line-height:15px;
+      height:15px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_6 .g-pstyle9 {
+      line-height:7px;
+      height:7px;
+      font-size:5px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_6 .g-pstyle10 {
+      line-height:5px;
+      height:5px;
+      font-size:4px;
+      text-align:center;
+      color:rgb(255,255,255);
+    }
+    #g-bubbles-Artboard_6 .g-pstyle11 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      color:rgb(136,136,136);
+    }
+    #g-bubbles-Artboard_6 .g-cstyle0 {
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_6 .g-cstyle1 {
+      letter-spacing:-0.02em;
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_6 .g-cstyle2 {
+      letter-spacing:-0.015em;
+      color:rgb(221,28,119);
+    }
+    #g-bubbles-Artboard_6 .g-cstyle3 {
+      letter-spacing:-0.039em;
+    }
+    #g-bubbles-Artboard_6 .g-cstyle4 {
+      font-size:14px;
+      color:rgb(119,119,119);
+    }
+    #g-bubbles-Artboard_6 .g-cstyle5 {
+      letter-spacing:0.014em;
+    }
+    #g-bubbles-Artboard_6 .g-cstyle6 {
+      letter-spacing:0.029em;
+    }
 
-</style>
+  </style>
 
-<!-- cancer visualization -->
-<style media="screen,print">
-  #g-cancer-box ,
-  #g-cancer-box .g-artboard {
-    margin:0 auto;
-  }
-  #g-cancer-box p {
-    margin:0;
-  }
-  #g-cancer-box .g-aiAbs {
-    position:absolute;
-  }
-  #g-cancer-box .g-aiImg {
-    position:absolute;
-    top:0;
-    display:block;
-    width:100% !important;
-  }
-  #g-cancer-box .g-aiSymbol {
-    position: absolute;
-    box-sizing: border-box;
-  }
-  #g-cancer-box .g-aiPointText p { white-space: nowrap; }
-  #g-cancer-Artboard_1 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-cancer-Artboard_1 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:14px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:12px;
-    text-align:left;
-    color:rgb(77,77,77);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-cancer-Artboard_1 .g-pstyle0 {
-    font-weight:bold;
-    line-height:19px;
-    height:19px;
-    font-size:16px;
-    color:rgb(0,0,0);
-  }
-  #g-cancer-Artboard_1 .g-pstyle1 {
-    line-height:17px;
-    height:17px;
-    font-size:14px;
-    color:rgb(102,102,102);
-  }
-  #g-cancer-Artboard_1 .g-pstyle2 {
-    font-weight:bold;
-    height:14px;
-    text-align:right;
-  }
-  #g-cancer-Artboard_1 .g-pstyle3 {
-    font-weight:bold;
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-    color:rgb(255,255,255);
-  }
-  #g-cancer-Artboard_1 .g-pstyle4 {
-    height:14px;
-    text-align:right;
-  }
-  #g-cancer-Artboard_1 .g-pstyle5 {
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-    color:rgb(255,255,255);
-  }
-  #g-cancer-Artboard_1 .g-pstyle6 {
-    font-weight:bold;
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-    text-align:center;
-    color:rgb(119,119,119);
-  }
-  #g-cancer-Artboard_1 .g-pstyle7 {
-    height:14px;
-    color:rgb(136,136,136);
-  }
-  #g-cancer-Artboard_1 .g-cstyle0 {
-    color:rgb(221,28,119);
-  }
-  #g-cancer-Artboard_1 .g-cstyle1 {
-    letter-spacing:-0.029em;
-  }
-  #g-cancer-Artboard_1 .g-cstyle2 {
-    letter-spacing:-0.03em;
-  }
-  #g-cancer-Artboard_1 .g-cstyle3 {
-    letter-spacing:-0.02em;
-  }
-  #g-cancer-Artboard_1 .g-cstyle4 {
-    letter-spacing:-0.04em;
-  }
-  #g-cancer-Artboard_1 .g-cstyle5 {
-    letter-spacing:-0.019em;
-  }
-  #g-cancer-Artboard_4 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-cancer-Artboard_4 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:10px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:8px;
-    text-align:left;
-    color:rgb(77,77,77);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-cancer-Artboard_4 .g-pstyle0 {
-    font-weight:bold;
-    line-height:19px;
-    height:19px;
-    font-size:16px;
-    color:rgb(0,0,0);
-  }
-  #g-cancer-Artboard_4 .g-pstyle1 {
-    line-height:17px;
-    height:17px;
-    font-size:14px;
-    color:rgb(102,102,102);
-  }
-  #g-cancer-Artboard_4 .g-pstyle2 {
-    font-weight:bold;
-    height:10px;
-    text-align:right;
-  }
-  #g-cancer-Artboard_4 .g-pstyle3 {
-    font-weight:bold;
-    height:10px;
-  }
-  #g-cancer-Artboard_4 .g-pstyle4 {
-    height:10px;
-    text-align:right;
-  }
-  #g-cancer-Artboard_4 .g-pstyle5 {
-    height:10px;
-  }
-  #g-cancer-Artboard_4 .g-pstyle6 {
-    font-weight:bold;
-    line-height:11px;
-    height:11px;
-    font-size:9px;
-    text-align:center;
-    color:rgb(119,119,119);
-  }
-  #g-cancer-Artboard_4 .g-pstyle7 {
-    line-height:14px;
-    height:14px;
-    font-size:12px;
-    color:rgb(136,136,136);
-  }
-  #g-cancer-Artboard_4 .g-cstyle0 {
-    color:rgb(221,28,119);
-  }
-  #g-cancer-Artboard_4 .g-cstyle1 {
-    letter-spacing:-0.029em;
-  }
-  #g-cancer-Artboard_4 .g-cstyle2 {
-    letter-spacing:-0.03em;
-  }
-  #g-cancer-Artboard_4 .g-cstyle3 {
-    letter-spacing:-0.02em;
-  }
-  #g-cancer-Artboard_4 .g-cstyle4 {
-    letter-spacing:-0.04em;
-  }
-  #g-cancer-Artboard_4 .g-cstyle5 {
-    letter-spacing:-0.019em;
-  }
-  #g-cancer-Artboard_3 {
-    position:relative;
-    overflow:hidden;
-  }
-  #g-cancer-Artboard_3 p {
-    font-family:arial,helvetica,sans-serif;
-    line-height:14px;
-    height:auto;
-    opacity:1;
-    letter-spacing:0em;
-    font-size:12px;
-    text-align:left;
-    color:rgb(77,77,77);
-    text-transform:none;
-    padding-bottom:0;
-    padding-top:0;
-    mix-blend-mode:normal;
-    font-style:normal;
-    position:static;
-  }
-  #g-cancer-Artboard_3 .g-pstyle0 {
-    font-weight:bold;
-    line-height:22px;
-    height:22px;
-    font-size:18px;
-    color:rgb(0,0,0);
-  }
-  #g-cancer-Artboard_3 .g-pstyle1 {
-    line-height:17px;
-    height:17px;
-    font-size:14px;
-    color:rgb(102,102,102);
-  }
-  #g-cancer-Artboard_3 .g-pstyle2 {
-    font-weight:bold;
-    height:14px;
-    text-align:right;
-  }
-  #g-cancer-Artboard_3 .g-pstyle3 {
-    font-weight:bold;
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-  }
-  #g-cancer-Artboard_3 .g-pstyle4 {
-    height:14px;
-    text-align:right;
-  }
-  #g-cancer-Artboard_3 .g-pstyle5 {
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-  }
-  #g-cancer-Artboard_3 .g-pstyle6 {
-    font-weight:bold;
-    line-height:13px;
-    height:13px;
-    font-size:11px;
-    text-align:center;
-    color:rgb(119,119,119);
-  }
-  #g-cancer-Artboard_3 .g-pstyle7 {
-    height:14px;
-    color:rgb(136,136,136);
-  }
-  #g-cancer-Artboard_3 .g-cstyle0 {
-    color:rgb(221,28,119);
-  }
-  #g-cancer-Artboard_3 .g-cstyle1 {
-    letter-spacing:-0.029em;
-  }
-  #g-cancer-Artboard_3 .g-cstyle2 {
-    letter-spacing:-0.03em;
-  }
-  #g-cancer-Artboard_3 .g-cstyle3 {
-    letter-spacing:-0.02em;
-  }
-  #g-cancer-Artboard_3 .g-cstyle4 {
-    letter-spacing:-0.04em;
-  }
-  #g-cancer-Artboard_3 .g-cstyle5 {
-    letter-spacing:-0.019em;
-  }
+  <!-- price visual -->
+  <style media="screen,print">
+    #g-prices-box ,
+    #g-prices-box .g-artboard {
+      margin:0 auto;
+    }
+    #g-prices-box p {
+      margin:0;
+    }
+    #g-prices-box .g-aiAbs {
+      position:absolute;
+    }
+    #g-prices-box .g-aiImg {
+      position:absolute;
+      top:0;
+      display:block;
+      width:100% !important;
+    }
+    #g-prices-box .g-aiSymbol {
+      position: absolute;
+      box-sizing: border-box;
+    }
+    #g-prices-box .g-aiPointText p { white-space: nowrap; }
+    #g-prices-Artboard_1 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-prices-Artboard_1 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:17px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:14px;
+      text-align:left;
+      color:rgb(102,102,102);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-prices-Artboard_1 .g-pstyle0 {
+      font-weight:bold;
+      line-height:22px;
+      height:22px;
+      font-size:18px;
+      color:rgb(0,0,0);
+    }
+    #g-prices-Artboard_1 .g-pstyle1 {
+      height:17px;
+    }
+    #g-prices-Artboard_1 .g-pstyle2 {
+      font-weight:bold;
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+      color:rgb(119,119,119);
+    }
+    #g-prices-Artboard_1 .g-pstyle3 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      color:rgb(77,77,77);
+    }
+    #g-prices-Artboard_1 .g-pstyle4 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      color:rgb(136,136,136);
+    }
+    #g-prices-Artboard_1 .g-cstyle0 {
+      letter-spacing:-0.02em;
+    }
+    #g-prices-Artboard_1 .g-cstyle1 {
+      letter-spacing:-0.015em;
+    }
+    #g-prices-Artboard_1 .g-cstyle2 {
+      letter-spacing:-0.01em;
+      color:rgb(221,28,119);
+    }
+    #g-prices-Artboard_1 .g-cstyle3 {
+      color:rgb(221,28,119);
+    }
+    #g-prices-Artboard_1 .g-cstyle4 {
+      letter-spacing:-0.039em;
+    }
+    #g-prices-Artboard_1 .g-cstyle5 {
+      letter-spacing:0.014em;
+    }
+    #g-prices-Artboard_1 .g-cstyle6 {
+      letter-spacing:-0.019em;
+    }
+    #g-prices-Artboard_1 .g-cstyle7 {
+      letter-spacing:-0.014em;
+    }
+    #g-prices-Artboard_1 .g-cstyle8 {
+      font-weight:500;
+      font-size:12px;
+      color:rgb(0,0,0);
+    }
+    #g-prices-Artboard_1 .g-cstyle9 {
+      letter-spacing:-0.025em;
+    }
+    #g-prices-Artboard_1 .g-cstyle10 {
+      letter-spacing:0.029em;
+    }
+    #g-prices-Artboard_1 .g-cstyle11 {
+      letter-spacing:-0.05em;
+    }
+    #g-prices-Artboard_3 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-prices-Artboard_3 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:17px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:14px;
+      text-align:left;
+      color:rgb(102,102,102);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-prices-Artboard_3 .g-pstyle0 {
+      font-weight:bold;
+      line-height:19px;
+      height:19px;
+      font-size:16px;
+      color:rgb(0,0,0);
+    }
+    #g-prices-Artboard_3 .g-pstyle1 {
+      height:17px;
+    }
+    #g-prices-Artboard_3 .g-pstyle2 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      color:rgb(77,77,77);
+    }
+    #g-prices-Artboard_3 .g-pstyle3 {
+      line-height:16px;
+      height:16px;
+      font-size:13px;
+      color:rgb(136,136,136);
+    }
+    #g-prices-Artboard_3 .g-cstyle0 {
+      letter-spacing:-0.02em;
+    }
+    #g-prices-Artboard_3 .g-cstyle1 {
+      letter-spacing:-0.015em;
+    }
+    #g-prices-Artboard_3 .g-cstyle2 {
+      letter-spacing:-0.01em;
+      color:rgb(221,28,119);
+    }
+    #g-prices-Artboard_3 .g-cstyle3 {
+      color:rgb(221,28,119);
+    }
+    #g-prices-Artboard_3 .g-cstyle4 {
+      letter-spacing:-0.039em;
+    }
+    #g-prices-Artboard_3 .g-cstyle5 {
+      letter-spacing:0.014em;
+    }
+    #g-prices-Artboard_3 .g-cstyle6 {
+      letter-spacing:-0.019em;
+    }
+    #g-prices-Artboard_3 .g-cstyle7 {
+      letter-spacing:-0.014em;
+    }
+    #g-prices-Artboard_3 .g-cstyle8 {
+      letter-spacing:1.812em;
+    }
+    #g-prices-Artboard_3 .g-cstyle9 {
+      letter-spacing:1.256em;
+    }
+    #g-prices-Artboard_3 .g-cstyle10 {
+      letter-spacing:1.255em;
+    }
+    #g-prices-Artboard_3 .g-cstyle11 {
+      letter-spacing:-0.025em;
+    }
+    #g-prices-Artboard_3 .g-cstyle12 {
+      letter-spacing:0.029em;
+    }
+    #g-prices-Artboard_3 .g-cstyle13 {
+      letter-spacing:-0.05em;
+    }
+    #g-prices-Artboard_5 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-prices-Artboard_5 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:17px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:14px;
+      text-align:left;
+      color:rgb(0,0,0);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-prices-Artboard_5 .g-pstyle0 {
+      font-weight:bold;
+      line-height:22px;
+      height:22px;
+      font-size:18px;
+    }
+    #g-prices-Artboard_5 .g-pstyle1 {
+      height:17px;
+    }
+    #g-prices-Artboard_5 .g-pstyle2 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      color:rgb(77,77,77);
+    }
+    #g-prices-Artboard_5 .g-pstyle3 {
+      line-height:16px;
+      height:16px;
+      font-size:13px;
+      color:rgb(136,136,136);
+    }
+    #g-prices-Artboard_5 .g-cstyle0 {
+      letter-spacing:-0.02em;
+    }
+    #g-prices-Artboard_5 .g-cstyle1 {
+      letter-spacing:-0.015em;
+    }
+    #g-prices-Artboard_5 .g-cstyle2 {
+      letter-spacing:-0.01em;
+      color:rgb(221,28,119);
+    }
+    #g-prices-Artboard_5 .g-cstyle3 {
+      color:rgb(221,28,119);
+    }
+    #g-prices-Artboard_5 .g-cstyle4 {
+      letter-spacing:-0.039em;
+    }
+    #g-prices-Artboard_5 .g-cstyle5 {
+      letter-spacing:0.014em;
+    }
+    #g-prices-Artboard_5 .g-cstyle6 {
+      letter-spacing:-0.019em;
+    }
+    #g-prices-Artboard_5 .g-cstyle7 {
+      letter-spacing:-0.014em;
+    }
+    #g-prices-Artboard_5 .g-cstyle8 {
+      letter-spacing:4.271em;
+    }
+    #g-prices-Artboard_5 .g-cstyle9 {
+      letter-spacing:3.715em;
+    }
+    #g-prices-Artboard_5 .g-cstyle10 {
+      letter-spacing:3.714em;
+    }
+    #g-prices-Artboard_5 .g-cstyle11 {
+      letter-spacing:-0.025em;
+    }
+    #g-prices-Artboard_5 .g-cstyle12 {
+      letter-spacing:0.029em;
+    }
+    #g-prices-Artboard_5 .g-cstyle13 {
+      letter-spacing:-0.05em;
+    }
 
-</style>
+  </style>
+
+  <!-- cancer visualization -->
+  <style media="screen,print">
+    #g-cancer-box ,
+    #g-cancer-box .g-artboard {
+      margin:0 auto;
+    }
+    #g-cancer-box p {
+      margin:0;
+    }
+    #g-cancer-box .g-aiAbs {
+      position:absolute;
+    }
+    #g-cancer-box .g-aiImg {
+      position:absolute;
+      top:0;
+      display:block;
+      width:100% !important;
+    }
+    #g-cancer-box .g-aiSymbol {
+      position: absolute;
+      box-sizing: border-box;
+    }
+    #g-cancer-box .g-aiPointText p { white-space: nowrap; }
+    #g-cancer-Artboard_1 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-cancer-Artboard_1 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:14px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:12px;
+      text-align:left;
+      color:rgb(77,77,77);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-cancer-Artboard_1 .g-pstyle0 {
+      font-weight:bold;
+      line-height:19px;
+      height:19px;
+      font-size:16px;
+      color:rgb(0,0,0);
+    }
+    #g-cancer-Artboard_1 .g-pstyle1 {
+      line-height:17px;
+      height:17px;
+      font-size:14px;
+      color:rgb(102,102,102);
+    }
+    #g-cancer-Artboard_1 .g-pstyle2 {
+      font-weight:bold;
+      height:14px;
+      text-align:right;
+    }
+    #g-cancer-Artboard_1 .g-pstyle3 {
+      font-weight:bold;
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+      color:rgb(255,255,255);
+    }
+    #g-cancer-Artboard_1 .g-pstyle4 {
+      height:14px;
+      text-align:right;
+    }
+    #g-cancer-Artboard_1 .g-pstyle5 {
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+      color:rgb(255,255,255);
+    }
+    #g-cancer-Artboard_1 .g-pstyle6 {
+      font-weight:bold;
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+      text-align:center;
+      color:rgb(119,119,119);
+    }
+    #g-cancer-Artboard_1 .g-pstyle7 {
+      height:14px;
+      color:rgb(136,136,136);
+    }
+    #g-cancer-Artboard_1 .g-cstyle0 {
+      color:rgb(221,28,119);
+    }
+    #g-cancer-Artboard_1 .g-cstyle1 {
+      letter-spacing:-0.029em;
+    }
+    #g-cancer-Artboard_1 .g-cstyle2 {
+      letter-spacing:-0.03em;
+    }
+    #g-cancer-Artboard_1 .g-cstyle3 {
+      letter-spacing:-0.02em;
+    }
+    #g-cancer-Artboard_1 .g-cstyle4 {
+      letter-spacing:-0.04em;
+    }
+    #g-cancer-Artboard_1 .g-cstyle5 {
+      letter-spacing:-0.019em;
+    }
+    #g-cancer-Artboard_4 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-cancer-Artboard_4 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:10px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:8px;
+      text-align:left;
+      color:rgb(77,77,77);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-cancer-Artboard_4 .g-pstyle0 {
+      font-weight:bold;
+      line-height:19px;
+      height:19px;
+      font-size:16px;
+      color:rgb(0,0,0);
+    }
+    #g-cancer-Artboard_4 .g-pstyle1 {
+      line-height:17px;
+      height:17px;
+      font-size:14px;
+      color:rgb(102,102,102);
+    }
+    #g-cancer-Artboard_4 .g-pstyle2 {
+      font-weight:bold;
+      height:10px;
+      text-align:right;
+    }
+    #g-cancer-Artboard_4 .g-pstyle3 {
+      font-weight:bold;
+      height:10px;
+    }
+    #g-cancer-Artboard_4 .g-pstyle4 {
+      height:10px;
+      text-align:right;
+    }
+    #g-cancer-Artboard_4 .g-pstyle5 {
+      height:10px;
+    }
+    #g-cancer-Artboard_4 .g-pstyle6 {
+      font-weight:bold;
+      line-height:11px;
+      height:11px;
+      font-size:9px;
+      text-align:center;
+      color:rgb(119,119,119);
+    }
+    #g-cancer-Artboard_4 .g-pstyle7 {
+      line-height:14px;
+      height:14px;
+      font-size:12px;
+      color:rgb(136,136,136);
+    }
+    #g-cancer-Artboard_4 .g-cstyle0 {
+      color:rgb(221,28,119);
+    }
+    #g-cancer-Artboard_4 .g-cstyle1 {
+      letter-spacing:-0.029em;
+    }
+    #g-cancer-Artboard_4 .g-cstyle2 {
+      letter-spacing:-0.03em;
+    }
+    #g-cancer-Artboard_4 .g-cstyle3 {
+      letter-spacing:-0.02em;
+    }
+    #g-cancer-Artboard_4 .g-cstyle4 {
+      letter-spacing:-0.04em;
+    }
+    #g-cancer-Artboard_4 .g-cstyle5 {
+      letter-spacing:-0.019em;
+    }
+    #g-cancer-Artboard_3 {
+      position:relative;
+      overflow:hidden;
+    }
+    #g-cancer-Artboard_3 p {
+      font-family:arial,helvetica,sans-serif;
+      line-height:14px;
+      height:auto;
+      opacity:1;
+      letter-spacing:0em;
+      font-size:12px;
+      text-align:left;
+      color:rgb(77,77,77);
+      text-transform:none;
+      padding-bottom:0;
+      padding-top:0;
+      mix-blend-mode:normal;
+      font-style:normal;
+      position:static;
+    }
+    #g-cancer-Artboard_3 .g-pstyle0 {
+      font-weight:bold;
+      line-height:22px;
+      height:22px;
+      font-size:18px;
+      color:rgb(0,0,0);
+    }
+    #g-cancer-Artboard_3 .g-pstyle1 {
+      line-height:17px;
+      height:17px;
+      font-size:14px;
+      color:rgb(102,102,102);
+    }
+    #g-cancer-Artboard_3 .g-pstyle2 {
+      font-weight:bold;
+      height:14px;
+      text-align:right;
+    }
+    #g-cancer-Artboard_3 .g-pstyle3 {
+      font-weight:bold;
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+    }
+    #g-cancer-Artboard_3 .g-pstyle4 {
+      height:14px;
+      text-align:right;
+    }
+    #g-cancer-Artboard_3 .g-pstyle5 {
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+    }
+    #g-cancer-Artboard_3 .g-pstyle6 {
+      font-weight:bold;
+      line-height:13px;
+      height:13px;
+      font-size:11px;
+      text-align:center;
+      color:rgb(119,119,119);
+    }
+    #g-cancer-Artboard_3 .g-pstyle7 {
+      height:14px;
+      color:rgb(136,136,136);
+    }
+    #g-cancer-Artboard_3 .g-cstyle0 {
+      color:rgb(221,28,119);
+    }
+    #g-cancer-Artboard_3 .g-cstyle1 {
+      letter-spacing:-0.029em;
+    }
+    #g-cancer-Artboard_3 .g-cstyle2 {
+      letter-spacing:-0.03em;
+    }
+    #g-cancer-Artboard_3 .g-cstyle3 {
+      letter-spacing:-0.02em;
+    }
+    #g-cancer-Artboard_3 .g-cstyle4 {
+      letter-spacing:-0.04em;
+    }
+    #g-cancer-Artboard_3 .g-cstyle5 {
+      letter-spacing:-0.019em;
+    }
+
+  </style>
 
 
 
-  </head>
-  <body>
+    </head>
+    <body>
 
-  <section class="hero is-large has-bg-img"> 
-    <div class="hero-body"> 
-        <h1 class="title">Medical Knitting: How Breast Cancer Survivors Handle Mastectomies One Knitted Knocker at a Time</h1> 
-    </div> 
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="content">
-        <p>By Laura Bejder  |  Date  |  <a href="https://github.com/laurabejder/data-studio-1" target="_blank"><u>Github</u></a></p>
-        
-        <p>Beryl Tsang was 37 when she was diagnosed with breast cancer.</p>
+    <section class="hero is-large has-bg-img"> 
+      <div class="hero-body"> 
+          <h1 class="title">Medical Knitting: How Breast Cancer Survivors Handle Mastectomies One Knitted Knocker at a Time</h1> 
+        <div class="bottomleft">
+           <p>AI generated image from DALL·E 2</p>
+        </div>
+      </div> 
 
-        <p>Six months after her mastectomy she was invited to a party and found herself in the need of a breast prosthesis. But she found the available options “too heavy, squishy or ugly,” she wrote on the site <a href="https://knitty.com/ISSUEfall05/PATTbits.html" target="_blank">Knitty.com</a>.</p>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <div class="byline">
+            <p>By Laura Bejder, February 17, 2023</p>
+          </div>
+          
+          <p>Beryl Tsang was 37 when she was diagnosed with breast cancer.</p>
 
-        <p>“I thought okay, I needed a breast prosthetic I’ll just knit myself one so that is what I did. I just went into my knitting, and I found this confetti colored cashmere yarn, and I made myself a tit,” Beryl Tsang tells me.</p>
+          <p>Six months after her mastectomy she was invited to a party and found herself in the need of a breast prosthesis. But she found the available options “too heavy, squishy or ugly,” she wrote on the site <a href="https://knitty.com/ISSUEfall05/PATTbits.html" target="_blank">Knitty.com</a>.</p>
 
-        <p>After the party, she kept knitting tits and eventually she <a href="https://www.ravelry.com/patterns/library/tit-bits" target="_blank">published the pattern online</a> so other people could make them for themselves.</p>
+          <p>“I thought okay, I needed a breast prosthetic I’ll just knit myself one so that is what I did. I just went into my knitting, and I found this confetti colored cashmere yarn, and I made myself a tit,” Beryl Tsang tells me.</p>
 
-        <p>Since then, the concept and recipes of knitted knockers – as they are commonly called – have spread across the internet. Today, it is the most popular kind of project in the 'medical knitting' subcategory on the community knitting website <a href="https://www.ravelry.com/patterns/search#pc=medical&sort=popularity&view=captioned_thumbs" target="_blank">Ravelry</a>.</p>
+          <p>After the party, she kept knitting tits and eventually she <a href="https://www.ravelry.com/patterns/library/tit-bits" target="_blank">published the pattern online</a> so other people could make them for themselves.</p>
 
-        <p> Ravelry allows knitters to register when they have completed a project using a particular recipe. An analysis of the medical knitting subcategory shows that knitted knockers make up more than 82 percent of all completed projects in that subcategory. At the time of writing, 4,744 finished knockers are registered at Ravelry.</p>
+          <p>Since then, the concept and recipes of knitted knockers – as they are commonly called – have spread across the internet. Today, it is the most popular kind of project in the 'medical knitting' subcategory on the community knitting website <a href="https://www.ravelry.com/patterns/search#pc=medical&sort=popularity&view=captioned_thumbs" target="_blank">Ravelry</a>.</p>
 
-        <div class="chart-section">
-          <div class="chart-row">
-            <div class="chart">
+          <p> Ravelry allows knitters to register when they have completed a project using a particular recipe. An analysis of the medical knitting subcategory shows that knitted knockers make up more than 82 percent of all completed projects in that subcategory. At the time of writing, 4,744 finished knockers are registered at Ravelry.</p>
 
-<div id="g-bubbles-box" class="ai2html">
+          <div class="chart-section">
+            <div class="chart-row">
+              <div class="chart">
 
-  <!-- Artboard: Artboard_1 -->
-  <div id="g-bubbles-Artboard_1" class="g-artboard" style="width:700px; height:585.333012373691px;" data-aspect-ratio="1.196" data-min-width="700">
-<div style=""></div>
-    <img id="g-bubbles-Artboard_1-img" class="g-bubbles-Artboard_1-img g-aiImg" alt="" src="visuals/bubbles-Artboard_1.png"/>
-    <div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:3.9481%;margin-top:-13.1px;left:1.111%;width:550px;">
-      <p class="g-pstyle0"><span class="g-cstyle0">Knitted Kno</span><span class="g-cstyle1">c</span><span class="g-cstyle0">ke</span><span class="g-cstyle2">r</span><span class="g-cstyle0">s</span> is the most <span class="g-cstyle3">P</span>opular Medical Knitting Recipe</p>
+  <div id="g-bubbles-box" class="ai2html">
+
+    <!-- Artboard: Artboard_1 -->
+    <div id="g-bubbles-Artboard_1" class="g-artboard" style="width:700px; height:585.333012373691px;" data-aspect-ratio="1.196" data-min-width="700">
+  <div style=""></div>
+      <img id="g-bubbles-Artboard_1-img" class="g-bubbles-Artboard_1-img g-aiImg" alt="" src="visuals/bubbles-Artboard_1.png"/>
+      <div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:3.9481%;margin-top:-13.1px;left:1.111%;width:550px;">
+        <p class="g-pstyle0"><span class="g-cstyle0">Knitted Kno</span><span class="g-cstyle1">c</span><span class="g-cstyle0">ke</span><span class="g-cstyle2">r</span><span class="g-cstyle0">s</span> is the most <span class="g-cstyle3">P</span>opular Medical Knitting Recipe</p>
+      </div>
+      <div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:8.5729%;margin-top:-18.2px;left:1.1475%;width:659px;">
+        <p class="g-pstyle1">Popularity of each category of recipes. The size of the bubble shows the number of completed Ravelry </p>
+        <p class="g-pstyle1">projects using a recipe in each category.<span class="g-cstyle4"> </span></p>
+      </div>
+      <div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:21.7635%;margin-top:-14.4px;left:12.0251%;margin-left:-83px;width:166px;">
+        <p class="g-pstyle2">4,744 completed projects </p>
+        <p class="g-pstyle2">have used a knocker recipe</p>
+      </div>
+      <div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.5876%;margin-top:-13.8px;left:76.6638%;margin-left:-26px;width:52px;">
+        <p class="g-pstyle3">Other</p>
+        <p class="g-pstyle4">158</p>
+      </div>
+      <div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.6555%;margin-top:-23.3px;left:83.7193%;margin-left:-39.5px;width:79px;">
+        <p class="g-pstyle5">Menst<span class="g-cstyle5">r</span>ual</p>
+        <p class="g-pstyle5">products</p>
+        <p class="g-pstyle6">196</p>
+      </div>
+      <div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:56.1435%;margin-top:-30.6px;left:87.3922%;margin-left:-47.5px;width:95px;">
+        <p class="g-pstyle5">Heating or</p>
+        <p class="g-pstyle5">cooling bags</p>
+        <p class="g-pstyle6">261</p>
+      </div>
+      <div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.1636%;margin-top:-34.6px;left:48.5914%;margin-left:-75.5px;width:151px;">
+        <p class="g-pstyle7">Knockers</p>
+        <p class="g-pstyle8">4,744</p>
+      </div>
+      <div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.8262%;margin-top:-18.3px;left:84.1362%;margin-left:-31px;width:62px;">
+        <p class="g-pstyle9">Inju<span class="g-cstyle6">r</span>y</p>
+        <p class="g-pstyle5">252</p>
+      </div>
+      <div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.8967%;margin-top:-11.5px;left:75.5792%;margin-left:-30.5px;width:61px;">
+        <p class="g-pstyle10">Cannular or </p>
+        <p class="g-pstyle10">IV protection</p>
+        <p class="g-pstyle11">58</p>
+      </div>
+      <div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:97.7387%;margin-top:-8.1px;left:1.195%;width:107px;">
+        <p class="g-pstyle12">Source: Ravelry</p>
+      </div>
     </div>
-    <div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:8.5729%;margin-top:-18.2px;left:1.1475%;width:659px;">
-      <p class="g-pstyle1">Popularity of each category of recipes. The size of the bubble shows the number of completed Ravelry </p>
-      <p class="g-pstyle1">projects using a recipe in each category.<span class="g-cstyle4"> </span></p>
+
+    <!-- Artboard: Artboard_3 -->
+    <div id="g-bubbles-Artboard_3" class="g-artboard" style="max-width: 320px;max-height: 461px" data-aspect-ratio="0.694" data-min-width="0" data-max-width="480">
+  <div style="padding: 0 0 144.1903% 0;"></div>
+      <img id="g-bubbles-Artboard_3-img" class="g-bubbles-Artboard_3-img g-aiImg" alt="" src="visuals/bubbles-Artboard_3.png"/>
+      <div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:5.6295%;margin-top:-21px;left:2.5165%;width:311px;">
+        <p class="g-pstyle0"><span class="g-cstyle0">Knitted Kno</span><span class="g-cstyle1">c</span><span class="g-cstyle0">ke</span><span class="g-cstyle2">r</span><span class="g-cstyle0">s</span> is the most <span class="g-cstyle3">P</span>opular </p>
+        <p class="g-pstyle0">Medical Knitting Recipe</p>
+      </div>
+      <div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.5907%;margin-top:-25.6px;left:2.583%;width:322px;">
+        <p class="g-pstyle1">Popularity of each category of recipes. The size of </p>
+        <p class="g-pstyle1">the bubble shows the number of completed Ravelry </p>
+        <p class="g-pstyle1">projects using a recipe in each category.<span class="g-cstyle4"> </span></p>
+      </div>
+      <div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.52%;margin-top:-17.4px;left:55.9558%;margin-left:-33px;width:66px;">
+        <p class="g-pstyle2">Heating or</p>
+        <p class="g-pstyle2">cooling bags</p>
+        <p class="g-pstyle3">261</p>
+      </div>
+      <div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:32.8376%;margin-top:-13.5px;left:37.218%;margin-left:-28px;width:56px;">
+        <p class="g-pstyle2">Menst<span class="g-cstyle5">r</span>ual</p>
+        <p class="g-pstyle2">products</p>
+        <p class="g-pstyle3">196</p>
+      </div>
+      <div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.2243%;margin-top:-10.5px;left:74.5843%;margin-left:-23px;width:46px;">
+        <p class="g-pstyle4">Inju<span class="g-cstyle6">r</span>y</p>
+        <p class="g-pstyle2">252</p>
+      </div>
+      <div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.8481%;margin-top:-8.6px;left:22.4811%;margin-left:-20px;width:40px;">
+        <p class="g-pstyle5">Other</p>
+        <p class="g-pstyle6">158</p>
+      </div>
+      <div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:43.1418%;margin-top:-7.1px;left:82.6752%;margin-left:-22.5px;width:45px;">
+        <p class="g-pstyle7">Cannular or </p>
+        <p class="g-pstyle7">IV protection</p>
+        <p class="g-pstyle8">58</p>
+      </div>
+      <div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.2232%;margin-top:-20.8px;left:51.7575%;margin-left:-49.5px;width:99px;">
+        <p class="g-pstyle9">Knockers</p>
+        <p class="g-pstyle10">4,744</p>
+      </div>
+      <div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.8983%;margin-top:-8.1px;left:2.8598%;width:107px;">
+        <p class="g-pstyle11">Source: Ravelry</p>
+      </div>
     </div>
-    <div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:21.7635%;margin-top:-14.4px;left:12.0251%;margin-left:-83px;width:166px;">
-      <p class="g-pstyle2">4,744 completed projects </p>
-      <p class="g-pstyle2">have used a knocker recipe</p>
+
+    <!-- Artboard: Artboard_6 -->
+    <div id="g-bubbles-Artboard_6" class="g-artboard" style="width:481px; height:468.432778405919px;" data-aspect-ratio="1.027" data-min-width="481" data-max-width="699">
+  <div style=""></div>
+      <img id="g-bubbles-Artboard_6-img" class="g-bubbles-Artboard_6-img g-aiImg" alt="" src="visuals/bubbles-Artboard_6.png"/>
+      <div id="g-ai2-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:6.1716%;margin-top:-23.9px;left:1.5622%;width:418px;">
+        <p class="g-pstyle0"><span class="g-cstyle0">Knitted Kno</span><span class="g-cstyle1">c</span><span class="g-cstyle0">ke</span><span class="g-cstyle2">r</span><span class="g-cstyle0">s</span> is the most <span class="g-cstyle3">P</span>opular Medical </p>
+        <p class="g-pstyle0">Knitting Recipe</p>
+      </div>
+      <div id="g-ai2-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:14.6768%;margin-top:-17.8px;left:1.6117%;width:440px;">
+        <p class="g-pstyle1">Popularity of each category of recipes. The size of the bubble shows the </p>
+        <p class="g-pstyle1">number of completed Ravelry projects using a recipe in each category.<span class="g-cstyle4"> </span></p>
+      </div>
+      <div id="g-ai2-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.5943%;margin-top:-11px;left:75.4358%;margin-left:-23px;width:46px;">
+        <p class="g-pstyle2">Other</p>
+        <p class="g-pstyle3">158</p>
+      </div>
+      <div id="g-ai2-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:44.4111%;margin-top:-18px;left:83.4594%;margin-left:-33.5px;width:67px;">
+        <p class="g-pstyle4">Menst<span class="g-cstyle5">r</span>ual</p>
+        <p class="g-pstyle4">products</p>
+        <p class="g-pstyle5">196</p>
+      </div>
+      <div id="g-ai2-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.5249%;margin-top:-23.2px;left:87.5888%;margin-left:-39.5px;width:79px;">
+        <p class="g-pstyle4">Heating or</p>
+        <p class="g-pstyle4">cooling bags</p>
+        <p class="g-pstyle5">261</p>
+      </div>
+      <div id="g-ai2-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.599%;margin-top:-27.2px;left:43.4047%;margin-left:-61.5px;width:123px;">
+        <p class="g-pstyle6">Knockers</p>
+        <p class="g-pstyle7">4,744</p>
+      </div>
+      <div id="g-ai2-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.7341%;margin-top:-14.1px;left:83.862%;margin-left:-26.5px;width:53px;">
+        <p class="g-pstyle8">Inju<span class="g-cstyle6">r</span>y</p>
+        <p class="g-pstyle4">252</p>
+      </div>
+      <div id="g-ai2-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.7375%;margin-top:-9.6px;left:74.1957%;margin-left:-26.5px;width:53px;">
+        <p class="g-pstyle9">Cannular or </p>
+        <p class="g-pstyle9">IV protection</p>
+        <p class="g-pstyle10">58</p>
+      </div>
+      <div id="g-ai2-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:97.3666%;margin-top:-8.1px;left:1.7313%;width:107px;">
+        <p class="g-pstyle11">Source: Ravelry</p>
+      </div>
     </div>
-    <div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.5876%;margin-top:-13.8px;left:76.6638%;margin-left:-26px;width:52px;">
-      <p class="g-pstyle3">Other</p>
-      <p class="g-pstyle4">158</p>
-    </div>
-    <div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.6555%;margin-top:-23.3px;left:83.7193%;margin-left:-39.5px;width:79px;">
-      <p class="g-pstyle5">Menst<span class="g-cstyle5">r</span>ual</p>
-      <p class="g-pstyle5">products</p>
-      <p class="g-pstyle6">196</p>
-    </div>
-    <div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:56.1435%;margin-top:-30.6px;left:87.3922%;margin-left:-47.5px;width:95px;">
-      <p class="g-pstyle5">Heating or</p>
-      <p class="g-pstyle5">cooling bags</p>
-      <p class="g-pstyle6">261</p>
-    </div>
-    <div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.1636%;margin-top:-34.6px;left:48.5914%;margin-left:-75.5px;width:151px;">
-      <p class="g-pstyle7">Knockers</p>
-      <p class="g-pstyle8">4,744</p>
-    </div>
-    <div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.8262%;margin-top:-18.3px;left:84.1362%;margin-left:-31px;width:62px;">
-      <p class="g-pstyle9">Inju<span class="g-cstyle6">r</span>y</p>
-      <p class="g-pstyle5">252</p>
-    </div>
-    <div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.8967%;margin-top:-11.5px;left:75.5792%;margin-left:-30.5px;width:61px;">
-      <p class="g-pstyle10">Cannular or </p>
-      <p class="g-pstyle10">IV protection</p>
-      <p class="g-pstyle11">58</p>
-    </div>
-    <div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:97.7387%;margin-top:-8.1px;left:1.195%;width:107px;">
-      <p class="g-pstyle12">Source: Ravelry</p>
-    </div>
+
   </div>
-
-  <!-- Artboard: Artboard_3 -->
-  <div id="g-bubbles-Artboard_3" class="g-artboard" style="max-width: 320px;max-height: 461px" data-aspect-ratio="0.694" data-min-width="0" data-max-width="480">
-<div style="padding: 0 0 144.1903% 0;"></div>
-    <img id="g-bubbles-Artboard_3-img" class="g-bubbles-Artboard_3-img g-aiImg" alt="" src="visuals/bubbles-Artboard_3.png"/>
-    <div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:5.6295%;margin-top:-21px;left:2.5165%;width:311px;">
-      <p class="g-pstyle0"><span class="g-cstyle0">Knitted Kno</span><span class="g-cstyle1">c</span><span class="g-cstyle0">ke</span><span class="g-cstyle2">r</span><span class="g-cstyle0">s</span> is the most <span class="g-cstyle3">P</span>opular </p>
-      <p class="g-pstyle0">Medical Knitting Recipe</p>
-    </div>
-    <div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.5907%;margin-top:-25.6px;left:2.583%;width:322px;">
-      <p class="g-pstyle1">Popularity of each category of recipes. The size of </p>
-      <p class="g-pstyle1">the bubble shows the number of completed Ravelry </p>
-      <p class="g-pstyle1">projects using a recipe in each category.<span class="g-cstyle4"> </span></p>
-    </div>
-    <div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.52%;margin-top:-17.4px;left:55.9558%;margin-left:-33px;width:66px;">
-      <p class="g-pstyle2">Heating or</p>
-      <p class="g-pstyle2">cooling bags</p>
-      <p class="g-pstyle3">261</p>
-    </div>
-    <div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:32.8376%;margin-top:-13.5px;left:37.218%;margin-left:-28px;width:56px;">
-      <p class="g-pstyle2">Menst<span class="g-cstyle5">r</span>ual</p>
-      <p class="g-pstyle2">products</p>
-      <p class="g-pstyle3">196</p>
-    </div>
-    <div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.2243%;margin-top:-10.5px;left:74.5843%;margin-left:-23px;width:46px;">
-      <p class="g-pstyle4">Inju<span class="g-cstyle6">r</span>y</p>
-      <p class="g-pstyle2">252</p>
-    </div>
-    <div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.8481%;margin-top:-8.6px;left:22.4811%;margin-left:-20px;width:40px;">
-      <p class="g-pstyle5">Other</p>
-      <p class="g-pstyle6">158</p>
-    </div>
-    <div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:43.1418%;margin-top:-7.1px;left:82.6752%;margin-left:-22.5px;width:45px;">
-      <p class="g-pstyle7">Cannular or </p>
-      <p class="g-pstyle7">IV protection</p>
-      <p class="g-pstyle8">58</p>
-    </div>
-    <div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.2232%;margin-top:-20.8px;left:51.7575%;margin-left:-49.5px;width:99px;">
-      <p class="g-pstyle9">Knockers</p>
-      <p class="g-pstyle10">4,744</p>
-    </div>
-    <div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.8983%;margin-top:-8.1px;left:2.8598%;width:107px;">
-      <p class="g-pstyle11">Source: Ravelry</p>
-    </div>
-  </div>
-
-  <!-- Artboard: Artboard_6 -->
-  <div id="g-bubbles-Artboard_6" class="g-artboard" style="width:481px; height:468.432778405919px;" data-aspect-ratio="1.027" data-min-width="481" data-max-width="699">
-<div style=""></div>
-    <img id="g-bubbles-Artboard_6-img" class="g-bubbles-Artboard_6-img g-aiImg" alt="" src="visuals/bubbles-Artboard_6.png"/>
-    <div id="g-ai2-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:6.1716%;margin-top:-23.9px;left:1.5622%;width:418px;">
-      <p class="g-pstyle0"><span class="g-cstyle0">Knitted Kno</span><span class="g-cstyle1">c</span><span class="g-cstyle0">ke</span><span class="g-cstyle2">r</span><span class="g-cstyle0">s</span> is the most <span class="g-cstyle3">P</span>opular Medical </p>
-      <p class="g-pstyle0">Knitting Recipe</p>
-    </div>
-    <div id="g-ai2-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:14.6768%;margin-top:-17.8px;left:1.6117%;width:440px;">
-      <p class="g-pstyle1">Popularity of each category of recipes. The size of the bubble shows the </p>
-      <p class="g-pstyle1">number of completed Ravelry projects using a recipe in each category.<span class="g-cstyle4"> </span></p>
-    </div>
-    <div id="g-ai2-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.5943%;margin-top:-11px;left:75.4358%;margin-left:-23px;width:46px;">
-      <p class="g-pstyle2">Other</p>
-      <p class="g-pstyle3">158</p>
-    </div>
-    <div id="g-ai2-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:44.4111%;margin-top:-18px;left:83.4594%;margin-left:-33.5px;width:67px;">
-      <p class="g-pstyle4">Menst<span class="g-cstyle5">r</span>ual</p>
-      <p class="g-pstyle4">products</p>
-      <p class="g-pstyle5">196</p>
-    </div>
-    <div id="g-ai2-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.5249%;margin-top:-23.2px;left:87.5888%;margin-left:-39.5px;width:79px;">
-      <p class="g-pstyle4">Heating or</p>
-      <p class="g-pstyle4">cooling bags</p>
-      <p class="g-pstyle5">261</p>
-    </div>
-    <div id="g-ai2-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.599%;margin-top:-27.2px;left:43.4047%;margin-left:-61.5px;width:123px;">
-      <p class="g-pstyle6">Knockers</p>
-      <p class="g-pstyle7">4,744</p>
-    </div>
-    <div id="g-ai2-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.7341%;margin-top:-14.1px;left:83.862%;margin-left:-26.5px;width:53px;">
-      <p class="g-pstyle8">Inju<span class="g-cstyle6">r</span>y</p>
-      <p class="g-pstyle4">252</p>
-    </div>
-    <div id="g-ai2-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.7375%;margin-top:-9.6px;left:74.1957%;margin-left:-26.5px;width:53px;">
-      <p class="g-pstyle9">Cannular or </p>
-      <p class="g-pstyle9">IV protection</p>
-      <p class="g-pstyle10">58</p>
-    </div>
-    <div id="g-ai2-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:97.3666%;margin-top:-8.1px;left:1.7313%;width:107px;">
-      <p class="g-pstyle11">Source: Ravelry</p>
-    </div>
-  </div>
-
-</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <p>And why knitted knockers you may ask. For Beryl Tsang knitting herself a new breast allowed her back some agency and control over her body.</p>  
+          <p>And why knitted knockers you may ask. For Beryl Tsang knitting herself a new breast allowed her back some agency and control over her body.</p>  
 
-        <p>“When you have breast cancer, you can feel very dehumanized,” Beryl Tsang says.</p> 
+          <p>“When you have breast cancer, you can feel very dehumanized,” Beryl Tsang says.</p> 
 
-        <p>“It is me and him [her surgeon], his whole medical class, who are now all looking at the cancer on my breast, right? And then all of a sudden that breast is gone. And then it was like ‘oh everybody let's go look at the scar’. It's like taking back ownership of your body.”</p> 
+          <p>“It is me and him [her surgeon], his whole medical class, who are now all looking at the cancer on my breast, right? And then all of a sudden that breast is gone. And then it was like ‘oh everybody let's go look at the scar’. It's like taking back ownership of your body.”</p> 
 
-        <p>“So agency is important,” she says.</p> 
+          <p>“So agency is important,” she says.</p> 
 
-        <div class="chart-section">
-          <div class="chart-row">
-            <div class="chart">
+          <p>Knitted knockers have many positive qualities for women that have just undergone a mastectomy.  For some, they are a temporary solution because they can be worn shorter after surgery. The softer nature of the knockers makes them less of an irritation to the scar.</p>
 
-<div id="g-prices-box" class="ai2html">
+          <p>And compared to conventional breast prostheses, knitted knockers offer a cheap alternative. An analysis of the recommended yarn of the knocker recipes at Ravelry shows, that it would cost between $4 and $18 plus production time to knit a knocker. Conventional breast prostheses would cost many times more, according to <a href="https://www.breastcancer.org/treatment/surgery/breast-forms/types" target="_blank">breastcancer.org</a>.</p>
 
-  <!-- Artboard: Artboard_1 -->
-  <div id="g-prices-Artboard_1" class="g-artboard" style="width:700px; height:206.755074656192px;" data-aspect-ratio="3.386" data-min-width="700">
-<div style=""></div>
-    <img id="g-prices-Artboard_1-img" class="g-prices-Artboard_1-img g-aiImg" alt="" src="visuals/prices-Artboard_1.png"/>
-    <div id="g-ai0-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:10.6935%;margin-top:-13.1px;left:1.1015%;width:672px;">
-      <p class="g-pstyle0">Knitted Kno<span class="g-cstyle0">c</span>ke<span class="g-cstyle1">r</span>s is a <span class="g-cstyle2">c</span><span class="g-cstyle3">heaper</span> alternative to co<span class="g-cstyle4">n</span>ventional breast P<span class="g-cstyle0">r</span>ostheses</p>
+          <div class="chart-section">
+            <div class="chart-row">
+              <div class="chart">
+
+  <div id="g-prices-box" class="ai2html">
+
+    <!-- Artboard: Artboard_1 -->
+    <div id="g-prices-Artboard_1" class="g-artboard" style="width:700px; height:206.755074656192px;" data-aspect-ratio="3.386" data-min-width="700">
+  <div style=""></div>
+      <img id="g-prices-Artboard_1-img" class="g-prices-Artboard_1-img g-aiImg" alt="" src="visuals/prices-Artboard_1.png"/>
+      <div id="g-ai0-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:10.6935%;margin-top:-13.1px;left:1.1015%;width:672px;">
+        <p class="g-pstyle0">Knitted Kno<span class="g-cstyle0">c</span>ke<span class="g-cstyle1">r</span>s is a <span class="g-cstyle2">c</span><span class="g-cstyle3">heaper</span> alternative to co<span class="g-cstyle4">n</span>ventional breast P<span class="g-cstyle0">r</span>ostheses</p>
+      </div>
+      <div id="g-ai0-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:19.7238%;margin-top:-9.8px;left:1.1293%;width:513px;">
+        <p class="g-pstyle1">P<span class="g-cstyle5">r</span>ice span of knitted knoc<span class="g-cstyle6">k</span>er<span class="g-cstyle1">s</span>, non&minus;silicone prostheses and silicone prostese<span class="g-cstyle7">s</span>.</p>
+      </div>
+      <div id="g-ai0-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:38.2041%;margin-top:-15px;left:42.4134%;width:160px;">
+        <p class="g-pstyle2">Yarn for a knitted knocker</p>
+        <p class="g-pstyle2">costs between $4 and $18<span class="g-cstyle8"> </span></p>
+      </div>
+      <div id="g-ai0-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:38.2565%;margin-top:-8.1px;left:4.7451%;width:66px;">
+        <p class="g-pstyle3">Knoc<span class="g-cstyle6">k</span>er</p>
+      </div>
+      <div id="g-ai0-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:53.7337%;margin-top:-8.1px;left:1.1383%;width:91px;">
+        <p class="g-pstyle3">Non&minus;silicone</p>
+      </div>
+      <div id="g-ai0-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:68.7273%;margin-top:-8.1px;left:4.9971%;width:64px;">
+        <p class="g-pstyle3">Silicone</p>
+      </div>
+      <div id="g-ai0-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:14.3814%;width:35px;">
+        <p class="g-pstyle3">$0</p>
+      </div>
+      <div id="g-ai0-8" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:29.3437%;width:49px;">
+        <p class="g-pstyle3">$100</p>
+      </div>
+      <div id="g-ai0-9" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:45.2591%;width:49px;">
+        <p class="g-pstyle3">$200</p>
+      </div>
+      <div id="g-ai0-10" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:61.1745%;width:49px;">
+        <p class="g-pstyle3">$300</p>
+      </div>
+      <div id="g-ai0-11" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:77.09%;width:49px;">
+        <p class="g-pstyle3">$400</p>
+      </div>
+      <div id="g-ai0-12" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:93.0071%;width:49px;">
+        <p class="g-pstyle3">$500</p>
+      </div>
+      <div id="g-ai0-13" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:93.8778%;margin-top:-8.1px;left:1.2147%;width:223px;">
+        <p class="g-pstyle4">Source: R<span class="g-cstyle0">a</span><span class="g-cstyle9">v</span>el<span class="g-cstyle10">r</span>y and breastcance<span class="g-cstyle11">r</span>.org</p>
+      </div>
     </div>
-    <div id="g-ai0-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:19.7238%;margin-top:-9.8px;left:1.1293%;width:513px;">
-      <p class="g-pstyle1">P<span class="g-cstyle5">r</span>ice span of knitted knoc<span class="g-cstyle6">k</span>er<span class="g-cstyle1">s</span>, non&minus;silicone prostheses and silicone prostese<span class="g-cstyle7">s</span>.</p>
+
+    <!-- Artboard: Artboard_3 -->
+    <div id="g-prices-Artboard_3" class="g-artboard" style="max-width: 320px;max-height: 282px" data-aspect-ratio="1.137" data-min-width="0" data-max-width="480">
+  <div style="padding: 0 0 87.9887% 0;"></div>
+      <img id="g-prices-Artboard_3-img" class="g-prices-Artboard_3-img g-aiImg" alt="" src="visuals/prices-Artboard_3.png"/>
+      <div id="g-ai1-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:9.2253%;margin-top:-21px;left:2.3874%;width:300px;">
+        <p class="g-pstyle0">Kno<span class="g-cstyle0">c</span>ke<span class="g-cstyle1">r</span>s is a <span class="g-cstyle2">c</span><span class="g-cstyle3">heaper</span> alternative to </p>
+        <p class="g-pstyle0">co<span class="g-cstyle4">n</span>ventional breast P<span class="g-cstyle0">r</span>ostheses</p>
+      </div>
+      <div id="g-ai1-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:24.2147%;margin-top:-18.2px;left:2.4102%;width:298px;">
+        <p class="g-pstyle1">P<span class="g-cstyle5">r</span>ice span of knitted knoc<span class="g-cstyle6">k</span>er<span class="g-cstyle1">s</span>, non&minus;silicone </p>
+        <p class="g-pstyle1">prostheses and silicone prostese<span class="g-cstyle7">s</span>.</p>
+      </div>
+      <div id="g-ai1-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:39.8123%;margin-top:-8.1px;left:10.2548%;width:66px;">
+        <p class="g-pstyle2">Knoc<span class="g-cstyle6">k</span>er</p>
+      </div>
+      <div id="g-ai1-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:56.5048%;margin-top:-8.1px;left:2.3648%;width:91px;">
+        <p class="g-pstyle2">Non&minus;silicone</p>
+      </div>
+      <div id="g-ai1-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.1973%;margin-top:-8.1px;left:10.8059%;width:64px;">
+        <p class="g-pstyle2">Silicone</p>
+      </div>
+      <div id="g-ai1-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:87.4037%;margin-top:-8.1px;left:26.806%;width:251px;">
+        <p class="g-pstyle2">$<span class="g-cstyle8">0</span>$10<span class="g-cstyle9">0</span>$20<span class="g-cstyle10">0</span>$30<span class="g-cstyle10">0</span>$40<span class="g-cstyle9">0</span>$500</p>
+      </div>
+      <div id="g-ai1-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:94.5393%;margin-top:-9.2px;left:2.3654%;width:226px;">
+        <p class="g-pstyle3">Data: R<span class="g-cstyle0">a</span><span class="g-cstyle11">v</span>el<span class="g-cstyle12">r</span>y and breastcance<span class="g-cstyle13">r</span>.org</p>
+      </div>
     </div>
-    <div id="g-ai0-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:38.2041%;margin-top:-15px;left:42.4134%;width:160px;">
-      <p class="g-pstyle2">Yarn for a knitted knocker</p>
-      <p class="g-pstyle2">costs between $4 and $18<span class="g-cstyle8"> </span></p>
+
+    <!-- Artboard: Artboard_5 -->
+    <div id="g-prices-Artboard_5" class="g-artboard" style="width:481px; height:278.687186283743px;" data-aspect-ratio="1.726" data-min-width="481" data-max-width="699">
+  <div style=""></div>
+      <img id="g-prices-Artboard_5-img" class="g-prices-Artboard_5-img g-aiImg" alt="" src="visuals/prices-Artboard_5.png"/>
+      <div id="g-ai2-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:10.3735%;margin-top:-23.9px;left:1.5851%;width:401px;">
+        <p class="g-pstyle0">Knitted Kno<span class="g-cstyle0">c</span>ke<span class="g-cstyle1">r</span>s is a <span class="g-cstyle2">c</span><span class="g-cstyle3">heeper </span>alternative to </p>
+        <p class="g-pstyle0">co<span class="g-cstyle4">n</span>ventional breast P<span class="g-cstyle0">r</span>ostheses</p>
+      </div>
+      <div id="g-ai2-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:24.8234%;margin-top:-18.2px;left:1.6144%;width:449px;">
+        <p class="g-pstyle1">P<span class="g-cstyle5">r</span>ice span of knitted knoc<span class="g-cstyle6">k</span>er<span class="g-cstyle1">s</span>, non&minus;silicone prostheses and silicone </p>
+        <p class="g-pstyle1">prostese<span class="g-cstyle7">s</span>.</p>
+      </div>
+      <div id="g-ai2-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:39.5163%;margin-top:-8.1px;left:6.8628%;width:66px;">
+        <p class="g-pstyle2">Knoc<span class="g-cstyle6">k</span>er</p>
+      </div>
+      <div id="g-ai2-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:56.3811%;margin-top:-8.1px;left:1.5918%;width:91px;">
+        <p class="g-pstyle2">Non&minus;silicone</p>
+      </div>
+      <div id="g-ai2-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.6047%;margin-top:-8.1px;left:7.2311%;width:64px;">
+        <p class="g-pstyle2">Silicone</p>
+      </div>
+      <div id="g-ai2-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:87.9577%;margin-top:-8.1px;left:19.2017%;width:400px;">
+        <p class="g-pstyle2">$<span class="g-cstyle8">0</span>$10<span class="g-cstyle9">0</span>$20<span class="g-cstyle9">0</span>$30<span class="g-cstyle9">0</span>$40<span class="g-cstyle10">0</span>$500</p>
+      </div>
+      <div id="g-ai2-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:95.5267%;margin-top:-9.2px;left:1.6651%;width:227px;">
+        <p class="g-pstyle3">Data: R<span class="g-cstyle0">a</span><span class="g-cstyle11">v</span>el<span class="g-cstyle12">r</span>y and breastcance<span class="g-cstyle13">r</span>.org</p>
+      </div>
     </div>
-    <div id="g-ai0-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:38.2565%;margin-top:-8.1px;left:4.7451%;width:66px;">
-      <p class="g-pstyle3">Knoc<span class="g-cstyle6">k</span>er</p>
-    </div>
-    <div id="g-ai0-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:53.7337%;margin-top:-8.1px;left:1.1383%;width:91px;">
-      <p class="g-pstyle3">Non&minus;silicone</p>
-    </div>
-    <div id="g-ai0-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:68.7273%;margin-top:-8.1px;left:4.9971%;width:64px;">
-      <p class="g-pstyle3">Silicone</p>
-    </div>
-    <div id="g-ai0-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:14.3814%;width:35px;">
-      <p class="g-pstyle3">$0</p>
-    </div>
-    <div id="g-ai0-8" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:29.3437%;width:49px;">
-      <p class="g-pstyle3">$100</p>
-    </div>
-    <div id="g-ai0-9" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:45.2591%;width:49px;">
-      <p class="g-pstyle3">$200</p>
-    </div>
-    <div id="g-ai0-10" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:61.1745%;width:49px;">
-      <p class="g-pstyle3">$300</p>
-    </div>
-    <div id="g-ai0-11" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:77.09%;width:49px;">
-      <p class="g-pstyle3">$400</p>
-    </div>
-    <div id="g-ai0-12" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:83.7209%;margin-top:-8.1px;left:93.0071%;width:49px;">
-      <p class="g-pstyle3">$500</p>
-    </div>
-    <div id="g-ai0-13" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:93.8778%;margin-top:-8.1px;left:1.2147%;width:223px;">
-      <p class="g-pstyle4">Source: R<span class="g-cstyle0">a</span><span class="g-cstyle9">v</span>el<span class="g-cstyle10">r</span>y and breastcance<span class="g-cstyle11">r</span>.org</p>
-    </div>
+
   </div>
 
-  <!-- Artboard: Artboard_3 -->
-  <div id="g-prices-Artboard_3" class="g-artboard" style="max-width: 320px;max-height: 282px" data-aspect-ratio="1.137" data-min-width="0" data-max-width="480">
-<div style="padding: 0 0 87.9887% 0;"></div>
-    <img id="g-prices-Artboard_3-img" class="g-prices-Artboard_3-img g-aiImg" alt="" src="visuals/prices-Artboard_3.png"/>
-    <div id="g-ai1-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:9.2253%;margin-top:-21px;left:2.3874%;width:300px;">
-      <p class="g-pstyle0">Kno<span class="g-cstyle0">c</span>ke<span class="g-cstyle1">r</span>s is a <span class="g-cstyle2">c</span><span class="g-cstyle3">heaper</span> alternative to </p>
-      <p class="g-pstyle0">co<span class="g-cstyle4">n</span>ventional breast P<span class="g-cstyle0">r</span>ostheses</p>
-    </div>
-    <div id="g-ai1-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:24.2147%;margin-top:-18.2px;left:2.4102%;width:298px;">
-      <p class="g-pstyle1">P<span class="g-cstyle5">r</span>ice span of knitted knoc<span class="g-cstyle6">k</span>er<span class="g-cstyle1">s</span>, non&minus;silicone </p>
-      <p class="g-pstyle1">prostheses and silicone prostese<span class="g-cstyle7">s</span>.</p>
-    </div>
-    <div id="g-ai1-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:39.8123%;margin-top:-8.1px;left:10.2548%;width:66px;">
-      <p class="g-pstyle2">Knoc<span class="g-cstyle6">k</span>er</p>
-    </div>
-    <div id="g-ai1-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:56.5048%;margin-top:-8.1px;left:2.3648%;width:91px;">
-      <p class="g-pstyle2">Non&minus;silicone</p>
-    </div>
-    <div id="g-ai1-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.1973%;margin-top:-8.1px;left:10.8059%;width:64px;">
-      <p class="g-pstyle2">Silicone</p>
-    </div>
-    <div id="g-ai1-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:87.4037%;margin-top:-8.1px;left:26.806%;width:251px;">
-      <p class="g-pstyle2">$<span class="g-cstyle8">0</span>$10<span class="g-cstyle9">0</span>$20<span class="g-cstyle10">0</span>$30<span class="g-cstyle10">0</span>$40<span class="g-cstyle9">0</span>$500</p>
-    </div>
-    <div id="g-ai1-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:94.5393%;margin-top:-9.2px;left:2.3654%;width:226px;">
-      <p class="g-pstyle3">Data: R<span class="g-cstyle0">a</span><span class="g-cstyle11">v</span>el<span class="g-cstyle12">r</span>y and breastcance<span class="g-cstyle13">r</span>.org</p>
-    </div>
-  </div>
-
-  <!-- Artboard: Artboard_5 -->
-  <div id="g-prices-Artboard_5" class="g-artboard" style="width:481px; height:278.687186283743px;" data-aspect-ratio="1.726" data-min-width="481" data-max-width="699">
-<div style=""></div>
-    <img id="g-prices-Artboard_5-img" class="g-prices-Artboard_5-img g-aiImg" alt="" src="visuals/prices-Artboard_5.png"/>
-    <div id="g-ai2-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:10.3735%;margin-top:-23.9px;left:1.5851%;width:401px;">
-      <p class="g-pstyle0">Knitted Kno<span class="g-cstyle0">c</span>ke<span class="g-cstyle1">r</span>s is a <span class="g-cstyle2">c</span><span class="g-cstyle3">heeper </span>alternative to </p>
-      <p class="g-pstyle0">co<span class="g-cstyle4">n</span>ventional breast P<span class="g-cstyle0">r</span>ostheses</p>
-    </div>
-    <div id="g-ai2-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:24.8234%;margin-top:-18.2px;left:1.6144%;width:449px;">
-      <p class="g-pstyle1">P<span class="g-cstyle5">r</span>ice span of knitted knoc<span class="g-cstyle6">k</span>er<span class="g-cstyle1">s</span>, non&minus;silicone prostheses and silicone </p>
-      <p class="g-pstyle1">prostese<span class="g-cstyle7">s</span>.</p>
-    </div>
-    <div id="g-ai2-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:39.5163%;margin-top:-8.1px;left:6.8628%;width:66px;">
-      <p class="g-pstyle2">Knoc<span class="g-cstyle6">k</span>er</p>
-    </div>
-    <div id="g-ai2-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:56.3811%;margin-top:-8.1px;left:1.5918%;width:91px;">
-      <p class="g-pstyle2">Non&minus;silicone</p>
-    </div>
-    <div id="g-ai2-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.6047%;margin-top:-8.1px;left:7.2311%;width:64px;">
-      <p class="g-pstyle2">Silicone</p>
-    </div>
-    <div id="g-ai2-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:87.9577%;margin-top:-8.1px;left:19.2017%;width:400px;">
-      <p class="g-pstyle2">$<span class="g-cstyle8">0</span>$10<span class="g-cstyle9">0</span>$20<span class="g-cstyle9">0</span>$30<span class="g-cstyle9">0</span>$40<span class="g-cstyle10">0</span>$500</p>
-    </div>
-    <div id="g-ai2-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:95.5267%;margin-top:-9.2px;left:1.6651%;width:227px;">
-      <p class="g-pstyle3">Data: R<span class="g-cstyle0">a</span><span class="g-cstyle11">v</span>el<span class="g-cstyle12">r</span>y and breastcance<span class="g-cstyle13">r</span>.org</p>
-    </div>
-  </div>
-
-</div>
-
+              </div>
             </div>
           </div>
-        </div>
 
-        <p> Some text </p>
+          <p> Some text </p>
 
-        <div class="chart-section">
-          <div class="chart-row">
-            <div class="chart">
+          <div class="chart-section">
+            <div class="chart-row">
+              <div class="chart">
 
-             <div id="g-cancer-box" class="ai2html">
+               <div id="g-cancer-box" class="ai2html">
 
-  <!-- Artboard: Artboard_1 -->
-  <div id="g-cancer-Artboard_1" class="g-artboard" style="width:691px; height:504.364695072371px;" data-aspect-ratio="1.37" data-min-width="691">
-<div style=""></div>
-    <img id="g-cancer-Artboard_1-img" class="g-cancer-Artboard_1-img g-aiImg" alt="" src="visuals/cancer-Artboard_1.png"/>
-    <div id="g-ai0-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:4.6345%;margin-top:-11.4px;left:1.1436%;width:582px;">
-      <p class="g-pstyle0">For American Women, <span class="g-cstyle0">Breast Cancer</span> is the most common type of cancer </p>
+    <!-- Artboard: Artboard_1 -->
+    <div id="g-cancer-Artboard_1" class="g-artboard" style="width:691px; height:504.364695072371px;" data-aspect-ratio="1.37" data-min-width="691">
+  <div style=""></div>
+      <img id="g-cancer-Artboard_1-img" class="g-cancer-Artboard_1-img g-aiImg" alt="" src="visuals/cancer-Artboard_1.png"/>
+      <div id="g-ai0-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:4.6345%;margin-top:-11.4px;left:1.1436%;width:582px;">
+        <p class="g-pstyle0">For American Women, <span class="g-cstyle0">Breast Cancer</span> is the most common type of cancer </p>
+      </div>
+      <div id="g-ai0-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:8.2837%;margin-top:-9.8px;left:1.3696%;width:430px;">
+        <p class="g-pstyle1">Age-adjusted cancer rates per 100,000 American women in 2021.</p>
+      </div>
+      <div id="g-ai0-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:16.1404%;margin-top:-8.4px;right:78.238%;width:148px;">
+        <p class="g-pstyle2"><span class="g-cstyle1">F</span>emale Breast Cancer</p>
+      </div>
+      <div id="g-ai0-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:16.4145%;margin-top:-7.8px;left:90.6046%;width:50px;">
+        <p class="g-pstyle3">129.7</p>
+      </div>
+      <div id="g-ai0-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:24.0098%;margin-top:-8.1px;right:78.2376%;width:91px;">
+        <p class="g-pstyle4">Lung Cancer</p>
+      </div>
+      <div id="g-ai0-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:24.2891%;margin-top:-7.5px;left:46.2298%;width:43px;">
+        <p class="g-pstyle5">48.1</p>
+      </div>
+      <div id="g-ai0-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:31.9406%;margin-top:-8.1px;right:78.1929%;width:164px;">
+        <p class="g-pstyle4">Colon and Rectum Cancer</p>
+      </div>
+      <div id="g-ai0-8" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:32.0216%;margin-top:-7.5px;left:37.1575%;width:43px;">
+        <p class="g-pstyle5">31.8</p>
+      </div>
+      <div id="g-ai0-9" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:39.6731%;margin-top:-8.1px;right:78.2358%;width:103px;">
+        <p class="g-pstyle4">Uterine Cancer</p>
+      </div>
+      <div id="g-ai0-10" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:39.9524%;margin-top:-7.5px;left:34.8753%;width:43px;">
+        <p class="g-pstyle5">27.7</p>
+      </div>
+      <div id="g-ai0-11" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:47.6039%;margin-top:-8.1px;right:78.2315%;width:104px;">
+        <p class="g-pstyle4">T<span class="g-cstyle2">h</span>yroid Cancer</p>
+      </div>
+      <div id="g-ai0-12" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:47.6849%;margin-top:-7.5px;left:30.088%;width:43px;">
+        <p class="g-pstyle5">19.1</p>
+      </div>
+      <div id="g-ai0-13" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:52.4203%;margin-top:-14.4px;left:67.4903%;margin-left:-88.5px;width:177px;">
+        <p class="g-pstyle6">Breast Cancer is 2.7 times as </p>
+        <p class="g-pstyle6">common as lung cancer</p>
+      </div>
+      <div id="g-ai0-14" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:55.3364%;margin-top:-8.1px;right:78.239%;width:147px;">
+        <p class="g-pstyle4">Melanoma Skin Cancer</p>
+      </div>
+      <div id="g-ai0-15" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:55.6155%;margin-top:-7.5px;left:29.5873%;width:43px;">
+        <p class="g-pstyle5">18.2</p>
+      </div>
+      <div id="g-ai0-16" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:63.2671%;margin-top:-8.1px;right:78.3104%;width:157px;">
+        <p class="g-pstyle4">Non&minus;Hodgkin <span class="g-cstyle2">L</span>ymphoma</p>
+      </div>
+      <div id="g-ai0-17" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:63.3481%;margin-top:-7.5px;left:27.8507%;width:43px;">
+        <p class="g-pstyle5">15.0</p>
+      </div>
+      <div id="g-ai0-18" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:71.1979%;margin-top:-8.1px;right:78.2023%;width:101px;">
+        <p class="g-pstyle4">Kidn<span class="g-cstyle3">e</span>y Cancer</p>
+      </div>
+      <div id="g-ai0-19" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:71.279%;margin-top:-7.5px;left:26.0243%;width:43px;">
+        <p class="g-pstyle5">11.8</p>
+      </div>
+      <div id="g-ai0-20" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:78.9304%;margin-top:-8.1px;right:78.3128%;width:114px;">
+        <p class="g-pstyle4"><span class="g-cstyle4">P</span>ancreas Cancer</p>
+      </div>
+      <div id="g-ai0-21" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:79.2097%;margin-top:-7.5px;left:25.9129%;width:43px;">
+        <p class="g-pstyle5">11.6</p>
+      </div>
+      <div id="g-ai0-22" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:86.8612%;margin-top:-8.1px;right:78.2263%;width:80px;">
+        <p class="g-pstyle4">Leu<span class="g-cstyle5">k</span>emias</p>
+      </div>
+      <div id="g-ai0-23" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:86.942%;margin-top:-7.5px;left:25.1893%;width:43px;">
+        <p class="g-pstyle5">10.3</p>
+      </div>
+      <div id="g-ai0-24" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:97.5677%;margin-top:-8.1px;left:1.2411%;width:186px;">
+        <p class="g-pstyle7">Source: CDC Cancer Statistics</p>
+      </div>
     </div>
-    <div id="g-ai0-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:8.2837%;margin-top:-9.8px;left:1.3696%;width:430px;">
-      <p class="g-pstyle1">Age-adjusted cancer rates per 100,000 American women in 2021.</p>
+
+    <!-- Artboard: Artboard_4 -->
+    <div id="g-cancer-Artboard_4" class="g-artboard" style="max-width: 320px;max-height: 480px" data-aspect-ratio="0.667" data-min-width="0" data-max-width="480">
+  <div style="padding: 0 0 150% 0;"></div>
+      <img id="g-cancer-Artboard_4-img" class="g-cancer-Artboard_4-img g-aiImg" alt="" src="visuals/cancer-Artboard_4.png"/>
+      <div id="g-ai1-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:5.4115%;margin-top:-21px;left:2.4714%;width:327px;">
+        <p class="g-pstyle0">For American Women, <span class="g-cstyle0">Breast Cancer </span>is </p>
+        <p class="g-pstyle0">the most common type of cancer</p>
+      </div>
+      <div id="g-ai1-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:14.2042%;margin-top:-18.2px;left:2.8721%;width:268px;">
+        <p class="g-pstyle1">Age-adjusted cancer rates per 100,000 </p>
+        <p class="g-pstyle1">American women in 2021.</p>
+      </div>
+      <div id="g-ai1-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:27.6536%;margin-top:-10.7px;right:79.7933%;width:77px;">
+        <p class="g-pstyle2"><span class="g-cstyle1">F</span>emale Breast</p>
+        <p class="g-pstyle2">Cancer</p>
+      </div>
+      <div id="g-ai1-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:27.6953%;margin-top:-5.9px;left:21.9477%;width:42px;">
+        <p class="g-pstyle3">129.7</p>
+      </div>
+      <div id="g-ai1-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:34.5274%;margin-top:-5.7px;right:79.9014%;width:68px;">
+        <p class="g-pstyle4">Lung Cancer</p>
+      </div>
+      <div id="g-ai1-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:34.5274%;margin-top:-5.7px;left:21.9477%;width:38px;">
+        <p class="g-pstyle5">48.1</p>
+      </div>
+      <div id="g-ai1-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:40.944%;margin-top:-10.5px;right:79.8281%;width:78px;">
+        <p class="g-pstyle4">Colon and</p>
+        <p class="g-pstyle4">Rectum Cancer</p>
+      </div>
+      <div id="g-ai1-8" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:41.1941%;margin-top:-5.7px;left:21.9477%;width:38px;">
+        <p class="g-pstyle5">31.8</p>
+      </div>
+      <div id="g-ai1-9" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:48.8239%;margin-top:-17.4px;left:66.7637%;margin-left:-55.5px;width:111px;">
+        <p class="g-pstyle6">Breast Cancer is 2.7 </p>
+        <p class="g-pstyle6">times as common </p>
+        <p class="g-pstyle6">as lung cancer</p>
+      </div>
+      <div id="g-ai1-10" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:47.6524%;margin-top:-5.7px;right:79.8989%;width:76px;">
+        <p class="g-pstyle4">Uterine Cancer</p>
+      </div>
+      <div id="g-ai1-11" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:47.6524%;margin-top:-5.7px;left:21.9477%;width:38px;">
+        <p class="g-pstyle5">27.7</p>
+      </div>
+      <div id="g-ai1-12" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:54.1107%;margin-top:-5.7px;left:21.9477%;width:38px;">
+        <p class="g-pstyle5">19.1</p>
+      </div>
+      <div id="g-ai1-13" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:54.1107%;margin-top:-5.7px;right:79.7885%;width:77px;">
+        <p class="g-pstyle4">T<span class="g-cstyle2">h</span>yroid Cancer</p>
+      </div>
+      <div id="g-ai1-14" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:60.5273%;margin-top:-10.5px;right:79.8281%;width:66px;">
+        <p class="g-pstyle4">Melanoma</p>
+        <p class="g-pstyle4">Skin Cancer</p>
+      </div>
+      <div id="g-ai1-15" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:60.5691%;margin-top:-5.7px;left:21.9477%;width:38px;">
+        <p class="g-pstyle5">18.2</p>
+      </div>
+      <div id="g-ai1-16" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:67.194%;margin-top:-10.5px;right:79.8324%;width:71px;">
+        <p class="g-pstyle4">Non&minus;Hodgkin</p>
+        <p class="g-pstyle4"><span class="g-cstyle2">L</span>ymphoma</p>
+      </div>
+      <div id="g-ai1-17" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:67.4441%;margin-top:-5.7px;left:21.9477%;width:38px;">
+        <p class="g-pstyle5">15.0</p>
+      </div>
+      <div id="g-ai1-18" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.4857%;margin-top:-5.7px;right:80.0588%;width:74px;">
+        <p class="g-pstyle4">Kidn<span class="g-cstyle3">e</span>y Cancer</p>
+      </div>
+      <div id="g-ai1-19" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.6941%;margin-top:-5.7px;left:21.9474%;width:38px;">
+        <p class="g-pstyle5">11.8</p>
+      </div>
+      <div id="g-ai1-20" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:80.7357%;margin-top:-10.5px;right:79.4113%;width:56px;">
+        <p class="g-pstyle4"><span class="g-cstyle4">P</span>ancreas</p>
+        <p class="g-pstyle4">Cancer</p>
+      </div>
+      <div id="g-ai1-21" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:80.3607%;margin-top:-5.7px;left:21.9477%;width:38px;">
+        <p class="g-pstyle5">11.6</p>
+      </div>
+      <div id="g-ai1-22" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:86.8191%;margin-top:-5.7px;left:21.9477%;width:38px;">
+        <p class="g-pstyle5">10.3</p>
+      </div>
+      <div id="g-ai1-23" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:86.8191%;margin-top:-5.7px;right:79.3948%;width:61px;">
+        <p class="g-pstyle4">Leu<span class="g-cstyle5">k</span>emias</p>
+      </div>
+      <div id="g-ai1-24" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:96.6869%;margin-top:-8.1px;left:2.6615%;width:107px;">
+        <p class="g-pstyle7">Source: Ravelry</p>
+      </div>
     </div>
-    <div id="g-ai0-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:16.1404%;margin-top:-8.4px;right:78.238%;width:148px;">
-      <p class="g-pstyle2"><span class="g-cstyle1">F</span>emale Breast Cancer</p>
+
+    <!-- Artboard: Artboard_3 -->
+    <div id="g-cancer-Artboard_3" class="g-artboard" style="width:481px; height:522.583845697489px;" data-aspect-ratio="0.92" data-min-width="481" data-max-width="690">
+  <div style=""></div>
+      <img id="g-cancer-Artboard_3-img" class="g-cancer-Artboard_3-img g-aiImg" alt="" src="visuals/cancer-Artboard_3.png"/>
+      <div id="g-ai2-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:5.5321%;margin-top:-23.9px;left:1.6481%;width:445px;">
+        <p class="g-pstyle0">For American Women, <span class="g-cstyle0">Breast Cancer</span> is the most </p>
+        <p class="g-pstyle0">common type of cancer </p>
+      </div>
+      <div id="g-ai2-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:11.6306%;margin-top:-9.8px;left:1.9188%;width:430px;">
+        <p class="g-pstyle1">Age-adjusted cancer rates per 100,000 American women in 2021.</p>
+      </div>
+      <div id="g-ai2-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:20.9739%;margin-top:-15.6px;right:76.5862%;width:104px;">
+        <p class="g-pstyle2"><span class="g-cstyle1">F</span>emale Breast</p>
+        <p class="g-pstyle2">Cancer</p>
+      </div>
+      <div id="g-ai2-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:20.8175%;margin-top:-7.8px;left:24.7404%;width:50px;">
+        <p class="g-pstyle3">129.7</p>
+      </div>
+      <div id="g-ai2-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:28.3394%;margin-top:-8.1px;right:76.593%;width:91px;">
+        <p class="g-pstyle4">Lung Cancer</p>
+      </div>
+      <div id="g-ai2-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:28.4176%;margin-top:-7.5px;left:24.7404%;width:43px;">
+        <p class="g-pstyle5">48.1</p>
+      </div>
+      <div id="g-ai2-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:35.8405%;margin-top:-15.3px;right:76.525%;width:122px;">
+        <p class="g-pstyle4">Colon and Rectum</p>
+        <p class="g-pstyle4"> Cancer</p>
+      </div>
+      <div id="g-ai2-8" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:35.8805%;margin-top:-7.5px;left:24.7406%;width:43px;">
+        <p class="g-pstyle5">31.8</p>
+      </div>
+      <div id="g-ai2-9" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:43.4566%;margin-top:-8.1px;right:76.5905%;width:103px;">
+        <p class="g-pstyle4">Uterine Cancer</p>
+      </div>
+      <div id="g-ai2-10" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:43.5347%;margin-top:-7.5px;left:24.7404%;width:43px;">
+        <p class="g-pstyle5">27.7</p>
+      </div>
+      <div id="g-ai2-11" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:51.4728%;margin-top:-21px;left:71.6835%;margin-left:-65px;width:130px;">
+        <p class="g-pstyle6">Breast Cancer is 2.7 </p>
+        <p class="g-pstyle6">times as common </p>
+        <p class="g-pstyle6">as lung cancer</p>
+      </div>
+      <div id="g-ai2-12" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:51.1109%;margin-top:-8.1px;right:76.5843%;width:104px;">
+        <p class="g-pstyle4">T<span class="g-cstyle2">h</span>yroid Cancer</p>
+      </div>
+      <div id="g-ai2-13" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:51.1891%;margin-top:-7.5px;left:24.7404%;width:43px;">
+        <p class="g-pstyle5">19.1</p>
+      </div>
+      <div id="g-ai2-14" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:58.8035%;margin-top:-15.3px;right:76.5914%;width:105px;">
+        <p class="g-pstyle4">Melanoma Skin</p>
+        <p class="g-pstyle4"> Cancer</p>
+      </div>
+      <div id="g-ai2-15" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:58.6519%;margin-top:-7.5px;left:24.7404%;width:43px;">
+        <p class="g-pstyle5">18.2</p>
+      </div>
+      <div id="g-ai2-16" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:66.075%;margin-top:-15.3px;right:76.628%;width:95px;">
+        <p class="g-pstyle4">Non&minus;Hodgkin</p>
+        <p class="g-pstyle4"> <span class="g-cstyle2">L</span>ymphoma</p>
+      </div>
+      <div id="g-ai2-17" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:66.1148%;margin-top:-7.5px;left:24.7404%;width:43px;">
+        <p class="g-pstyle5">15.0</p>
+      </div>
+      <div id="g-ai2-18" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.691%;margin-top:-8.1px;right:76.5423%;width:101px;">
+        <p class="g-pstyle4">Kidn<span class="g-cstyle3">e</span>y Cancer</p>
+      </div>
+      <div id="g-ai2-19" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.7692%;margin-top:-7.5px;left:24.7404%;width:43px;">
+        <p class="g-pstyle5">11.8</p>
+      </div>
+      <div id="g-ai2-20" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:81.3453%;margin-top:-8.1px;right:76.7012%;width:114px;">
+        <p class="g-pstyle4"><span class="g-cstyle4">P</span>ancreas Cancer</p>
+      </div>
+      <div id="g-ai2-21" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:81.4235%;margin-top:-7.5px;left:24.7406%;width:43px;">
+        <p class="g-pstyle5">11.6</p>
+      </div>
+      <div id="g-ai2-22" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:88.9995%;margin-top:-8.1px;right:76.5769%;width:80px;">
+        <p class="g-pstyle4">Leu<span class="g-cstyle5">k</span>emias</p>
+      </div>
+      <div id="g-ai2-23" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:89.0776%;margin-top:-7.5px;left:24.7406%;width:43px;">
+        <p class="g-pstyle5">10.3</p>
+      </div>
+      <div id="g-ai2-24" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:97.6106%;margin-top:-8.1px;left:1.7845%;width:186px;">
+        <p class="g-pstyle7">Source: CDC Cancer Statistics</p>
+      </div>
     </div>
-    <div id="g-ai0-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:16.4145%;margin-top:-7.8px;left:90.6046%;width:50px;">
-      <p class="g-pstyle3">129.7</p>
-    </div>
-    <div id="g-ai0-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:24.0098%;margin-top:-8.1px;right:78.2376%;width:91px;">
-      <p class="g-pstyle4">Lung Cancer</p>
-    </div>
-    <div id="g-ai0-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:24.2891%;margin-top:-7.5px;left:46.2298%;width:43px;">
-      <p class="g-pstyle5">48.1</p>
-    </div>
-    <div id="g-ai0-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:31.9406%;margin-top:-8.1px;right:78.1929%;width:164px;">
-      <p class="g-pstyle4">Colon and Rectum Cancer</p>
-    </div>
-    <div id="g-ai0-8" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:32.0216%;margin-top:-7.5px;left:37.1575%;width:43px;">
-      <p class="g-pstyle5">31.8</p>
-    </div>
-    <div id="g-ai0-9" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:39.6731%;margin-top:-8.1px;right:78.2358%;width:103px;">
-      <p class="g-pstyle4">Uterine Cancer</p>
-    </div>
-    <div id="g-ai0-10" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:39.9524%;margin-top:-7.5px;left:34.8753%;width:43px;">
-      <p class="g-pstyle5">27.7</p>
-    </div>
-    <div id="g-ai0-11" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:47.6039%;margin-top:-8.1px;right:78.2315%;width:104px;">
-      <p class="g-pstyle4">T<span class="g-cstyle2">h</span>yroid Cancer</p>
-    </div>
-    <div id="g-ai0-12" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:47.6849%;margin-top:-7.5px;left:30.088%;width:43px;">
-      <p class="g-pstyle5">19.1</p>
-    </div>
-    <div id="g-ai0-13" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:52.4203%;margin-top:-14.4px;left:67.4903%;margin-left:-88.5px;width:177px;">
-      <p class="g-pstyle6">Breast Cancer is 2.7 times as </p>
-      <p class="g-pstyle6">common as lung cancer</p>
-    </div>
-    <div id="g-ai0-14" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:55.3364%;margin-top:-8.1px;right:78.239%;width:147px;">
-      <p class="g-pstyle4">Melanoma Skin Cancer</p>
-    </div>
-    <div id="g-ai0-15" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:55.6155%;margin-top:-7.5px;left:29.5873%;width:43px;">
-      <p class="g-pstyle5">18.2</p>
-    </div>
-    <div id="g-ai0-16" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:63.2671%;margin-top:-8.1px;right:78.3104%;width:157px;">
-      <p class="g-pstyle4">Non&minus;Hodgkin <span class="g-cstyle2">L</span>ymphoma</p>
-    </div>
-    <div id="g-ai0-17" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:63.3481%;margin-top:-7.5px;left:27.8507%;width:43px;">
-      <p class="g-pstyle5">15.0</p>
-    </div>
-    <div id="g-ai0-18" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:71.1979%;margin-top:-8.1px;right:78.2023%;width:101px;">
-      <p class="g-pstyle4">Kidn<span class="g-cstyle3">e</span>y Cancer</p>
-    </div>
-    <div id="g-ai0-19" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:71.279%;margin-top:-7.5px;left:26.0243%;width:43px;">
-      <p class="g-pstyle5">11.8</p>
-    </div>
-    <div id="g-ai0-20" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:78.9304%;margin-top:-8.1px;right:78.3128%;width:114px;">
-      <p class="g-pstyle4"><span class="g-cstyle4">P</span>ancreas Cancer</p>
-    </div>
-    <div id="g-ai0-21" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:79.2097%;margin-top:-7.5px;left:25.9129%;width:43px;">
-      <p class="g-pstyle5">11.6</p>
-    </div>
-    <div id="g-ai0-22" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:86.8612%;margin-top:-8.1px;right:78.2263%;width:80px;">
-      <p class="g-pstyle4">Leu<span class="g-cstyle5">k</span>emias</p>
-    </div>
-    <div id="g-ai0-23" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:86.942%;margin-top:-7.5px;left:25.1893%;width:43px;">
-      <p class="g-pstyle5">10.3</p>
-    </div>
-    <div id="g-ai0-24" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:97.5677%;margin-top:-8.1px;left:1.2411%;width:186px;">
-      <p class="g-pstyle7">Source: CDC Cancer Statistics</p>
-    </div>
+
   </div>
 
-  <!-- Artboard: Artboard_4 -->
-  <div id="g-cancer-Artboard_4" class="g-artboard" style="max-width: 320px;max-height: 480px" data-aspect-ratio="0.667" data-min-width="0" data-max-width="480">
-<div style="padding: 0 0 150% 0;"></div>
-    <img id="g-cancer-Artboard_4-img" class="g-cancer-Artboard_4-img g-aiImg" alt="" src="visuals/cancer-Artboard_4.png"/>
-    <div id="g-ai1-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:5.4115%;margin-top:-21px;left:2.4714%;width:327px;">
-      <p class="g-pstyle0">For American Women, <span class="g-cstyle0">Breast Cancer </span>is </p>
-      <p class="g-pstyle0">the most common type of cancer</p>
-    </div>
-    <div id="g-ai1-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:14.2042%;margin-top:-18.2px;left:2.8721%;width:268px;">
-      <p class="g-pstyle1">Age-adjusted cancer rates per 100,000 </p>
-      <p class="g-pstyle1">American women in 2021.</p>
-    </div>
-    <div id="g-ai1-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:27.6536%;margin-top:-10.7px;right:79.7933%;width:77px;">
-      <p class="g-pstyle2"><span class="g-cstyle1">F</span>emale Breast</p>
-      <p class="g-pstyle2">Cancer</p>
-    </div>
-    <div id="g-ai1-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:27.6953%;margin-top:-5.9px;left:21.9477%;width:42px;">
-      <p class="g-pstyle3">129.7</p>
-    </div>
-    <div id="g-ai1-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:34.5274%;margin-top:-5.7px;right:79.9014%;width:68px;">
-      <p class="g-pstyle4">Lung Cancer</p>
-    </div>
-    <div id="g-ai1-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:34.5274%;margin-top:-5.7px;left:21.9477%;width:38px;">
-      <p class="g-pstyle5">48.1</p>
-    </div>
-    <div id="g-ai1-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:40.944%;margin-top:-10.5px;right:79.8281%;width:78px;">
-      <p class="g-pstyle4">Colon and</p>
-      <p class="g-pstyle4">Rectum Cancer</p>
-    </div>
-    <div id="g-ai1-8" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:41.1941%;margin-top:-5.7px;left:21.9477%;width:38px;">
-      <p class="g-pstyle5">31.8</p>
-    </div>
-    <div id="g-ai1-9" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:48.8239%;margin-top:-17.4px;left:66.7637%;margin-left:-55.5px;width:111px;">
-      <p class="g-pstyle6">Breast Cancer is 2.7 </p>
-      <p class="g-pstyle6">times as common </p>
-      <p class="g-pstyle6">as lung cancer</p>
-    </div>
-    <div id="g-ai1-10" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:47.6524%;margin-top:-5.7px;right:79.8989%;width:76px;">
-      <p class="g-pstyle4">Uterine Cancer</p>
-    </div>
-    <div id="g-ai1-11" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:47.6524%;margin-top:-5.7px;left:21.9477%;width:38px;">
-      <p class="g-pstyle5">27.7</p>
-    </div>
-    <div id="g-ai1-12" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:54.1107%;margin-top:-5.7px;left:21.9477%;width:38px;">
-      <p class="g-pstyle5">19.1</p>
-    </div>
-    <div id="g-ai1-13" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:54.1107%;margin-top:-5.7px;right:79.7885%;width:77px;">
-      <p class="g-pstyle4">T<span class="g-cstyle2">h</span>yroid Cancer</p>
-    </div>
-    <div id="g-ai1-14" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:60.5273%;margin-top:-10.5px;right:79.8281%;width:66px;">
-      <p class="g-pstyle4">Melanoma</p>
-      <p class="g-pstyle4">Skin Cancer</p>
-    </div>
-    <div id="g-ai1-15" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:60.5691%;margin-top:-5.7px;left:21.9477%;width:38px;">
-      <p class="g-pstyle5">18.2</p>
-    </div>
-    <div id="g-ai1-16" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:67.194%;margin-top:-10.5px;right:79.8324%;width:71px;">
-      <p class="g-pstyle4">Non&minus;Hodgkin</p>
-      <p class="g-pstyle4"><span class="g-cstyle2">L</span>ymphoma</p>
-    </div>
-    <div id="g-ai1-17" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:67.4441%;margin-top:-5.7px;left:21.9477%;width:38px;">
-      <p class="g-pstyle5">15.0</p>
-    </div>
-    <div id="g-ai1-18" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.4857%;margin-top:-5.7px;right:80.0588%;width:74px;">
-      <p class="g-pstyle4">Kidn<span class="g-cstyle3">e</span>y Cancer</p>
-    </div>
-    <div id="g-ai1-19" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.6941%;margin-top:-5.7px;left:21.9474%;width:38px;">
-      <p class="g-pstyle5">11.8</p>
-    </div>
-    <div id="g-ai1-20" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:80.7357%;margin-top:-10.5px;right:79.4113%;width:56px;">
-      <p class="g-pstyle4"><span class="g-cstyle4">P</span>ancreas</p>
-      <p class="g-pstyle4">Cancer</p>
-    </div>
-    <div id="g-ai1-21" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:80.3607%;margin-top:-5.7px;left:21.9477%;width:38px;">
-      <p class="g-pstyle5">11.6</p>
-    </div>
-    <div id="g-ai1-22" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:86.8191%;margin-top:-5.7px;left:21.9477%;width:38px;">
-      <p class="g-pstyle5">10.3</p>
-    </div>
-    <div id="g-ai1-23" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:86.8191%;margin-top:-5.7px;right:79.3948%;width:61px;">
-      <p class="g-pstyle4">Leu<span class="g-cstyle5">k</span>emias</p>
-    </div>
-    <div id="g-ai1-24" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:96.6869%;margin-top:-8.1px;left:2.6615%;width:107px;">
-      <p class="g-pstyle7">Source: Ravelry</p>
-    </div>
-  </div>
+                <p>Some text</p>
 
-  <!-- Artboard: Artboard_3 -->
-  <div id="g-cancer-Artboard_3" class="g-artboard" style="width:481px; height:522.583845697489px;" data-aspect-ratio="0.92" data-min-width="481" data-max-width="690">
-<div style=""></div>
-    <img id="g-cancer-Artboard_3-img" class="g-cancer-Artboard_3-img g-aiImg" alt="" src="visuals/cancer-Artboard_3.png"/>
-    <div id="g-ai2-1" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:5.5321%;margin-top:-23.9px;left:1.6481%;width:445px;">
-      <p class="g-pstyle0">For American Women, <span class="g-cstyle0">Breast Cancer</span> is the most </p>
-      <p class="g-pstyle0">common type of cancer </p>
-    </div>
-    <div id="g-ai2-2" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:11.6306%;margin-top:-9.8px;left:1.9188%;width:430px;">
-      <p class="g-pstyle1">Age-adjusted cancer rates per 100,000 American women in 2021.</p>
-    </div>
-    <div id="g-ai2-3" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:20.9739%;margin-top:-15.6px;right:76.5862%;width:104px;">
-      <p class="g-pstyle2"><span class="g-cstyle1">F</span>emale Breast</p>
-      <p class="g-pstyle2">Cancer</p>
-    </div>
-    <div id="g-ai2-4" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:20.8175%;margin-top:-7.8px;left:24.7404%;width:50px;">
-      <p class="g-pstyle3">129.7</p>
-    </div>
-    <div id="g-ai2-5" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:28.3394%;margin-top:-8.1px;right:76.593%;width:91px;">
-      <p class="g-pstyle4">Lung Cancer</p>
-    </div>
-    <div id="g-ai2-6" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:28.4176%;margin-top:-7.5px;left:24.7404%;width:43px;">
-      <p class="g-pstyle5">48.1</p>
-    </div>
-    <div id="g-ai2-7" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:35.8405%;margin-top:-15.3px;right:76.525%;width:122px;">
-      <p class="g-pstyle4">Colon and Rectum</p>
-      <p class="g-pstyle4"> Cancer</p>
-    </div>
-    <div id="g-ai2-8" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:35.8805%;margin-top:-7.5px;left:24.7406%;width:43px;">
-      <p class="g-pstyle5">31.8</p>
-    </div>
-    <div id="g-ai2-9" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:43.4566%;margin-top:-8.1px;right:76.5905%;width:103px;">
-      <p class="g-pstyle4">Uterine Cancer</p>
-    </div>
-    <div id="g-ai2-10" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:43.5347%;margin-top:-7.5px;left:24.7404%;width:43px;">
-      <p class="g-pstyle5">27.7</p>
-    </div>
-    <div id="g-ai2-11" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:51.4728%;margin-top:-21px;left:71.6835%;margin-left:-65px;width:130px;">
-      <p class="g-pstyle6">Breast Cancer is 2.7 </p>
-      <p class="g-pstyle6">times as common </p>
-      <p class="g-pstyle6">as lung cancer</p>
-    </div>
-    <div id="g-ai2-12" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:51.1109%;margin-top:-8.1px;right:76.5843%;width:104px;">
-      <p class="g-pstyle4">T<span class="g-cstyle2">h</span>yroid Cancer</p>
-    </div>
-    <div id="g-ai2-13" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:51.1891%;margin-top:-7.5px;left:24.7404%;width:43px;">
-      <p class="g-pstyle5">19.1</p>
-    </div>
-    <div id="g-ai2-14" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:58.8035%;margin-top:-15.3px;right:76.5914%;width:105px;">
-      <p class="g-pstyle4">Melanoma Skin</p>
-      <p class="g-pstyle4"> Cancer</p>
-    </div>
-    <div id="g-ai2-15" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:58.6519%;margin-top:-7.5px;left:24.7404%;width:43px;">
-      <p class="g-pstyle5">18.2</p>
-    </div>
-    <div id="g-ai2-16" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:66.075%;margin-top:-15.3px;right:76.628%;width:95px;">
-      <p class="g-pstyle4">Non&minus;Hodgkin</p>
-      <p class="g-pstyle4"> <span class="g-cstyle2">L</span>ymphoma</p>
-    </div>
-    <div id="g-ai2-17" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:66.1148%;margin-top:-7.5px;left:24.7404%;width:43px;">
-      <p class="g-pstyle5">15.0</p>
-    </div>
-    <div id="g-ai2-18" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.691%;margin-top:-8.1px;right:76.5423%;width:101px;">
-      <p class="g-pstyle4">Kidn<span class="g-cstyle3">e</span>y Cancer</p>
-    </div>
-    <div id="g-ai2-19" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:73.7692%;margin-top:-7.5px;left:24.7404%;width:43px;">
-      <p class="g-pstyle5">11.8</p>
-    </div>
-    <div id="g-ai2-20" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:81.3453%;margin-top:-8.1px;right:76.7012%;width:114px;">
-      <p class="g-pstyle4"><span class="g-cstyle4">P</span>ancreas Cancer</p>
-    </div>
-    <div id="g-ai2-21" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:81.4235%;margin-top:-7.5px;left:24.7406%;width:43px;">
-      <p class="g-pstyle5">11.6</p>
-    </div>
-    <div id="g-ai2-22" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:88.9995%;margin-top:-8.1px;right:76.5769%;width:80px;">
-      <p class="g-pstyle4">Leu<span class="g-cstyle5">k</span>emias</p>
-    </div>
-    <div id="g-ai2-23" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:89.0776%;margin-top:-7.5px;left:24.7406%;width:43px;">
-      <p class="g-pstyle5">10.3</p>
-    </div>
-    <div id="g-ai2-24" class="g-_Layer_ g-aiAbs g-aiPointText" style="top:97.6106%;margin-top:-8.1px;left:1.7845%;width:186px;">
-      <p class="g-pstyle7">Source: CDC Cancer Statistics</p>
-    </div>
-  </div>
+                <p><a href="https://github.com/laurabejder/knitting_project" target="_blank"><u>Github</u></a></p>
 
-</div>
-
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  </body>
-</html>
+    </section>
+    </body>
+  </html>
 
