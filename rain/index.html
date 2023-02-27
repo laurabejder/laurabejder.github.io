@@ -1,0 +1,228 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Has It Always Been This Rainy?</title>
+      <link rel="icon" href="images/icon.png">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+
+      <style>
+          .container {
+              /* Remove the line below if you want a wider page */
+            max-width: 700px !important;
+            color: #000000;
+            font-family: Georgia;
+          }
+
+          img {
+            display: block;
+            width:700px;
+            margin: 0 auto;
+            transition: 0.3s;
+          }
+
+          a {
+            color: deepskyblue;
+          }
+
+          h1.title {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 0.4rem;
+            font-weight: 800;
+            color: white;
+            max-width: 800px;
+          }
+
+          h2.subtitle {
+            font-weight: bold;
+            font-size: 20px;
+            color: white; 
+          }
+
+          .has-bg-img { 
+            background: url('images/image1.png');
+            center center; 
+            background-size:cover; 
+          }
+
+          .hero {
+            max-height: 100vh;
+          }
+
+          .byline {
+            padding-top: 0px;
+            padding-bottom: 0px;
+          }
+
+          .bottomleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            font-size: 18px;
+            color: white;
+            
+            font-size: 12px;
+          }
+
+          .date {
+            font-size: 14px;
+            padding-top: 5px;
+            padding-bottom: 25px;
+
+          }
+
+          .row-container {
+            display: flex;
+            flex-direction: row;
+            max-width: 960px;
+            gap: 2em;
+          }
+          
+          .column-container {
+            flex-grow: 1;
+          }
+          
+          @media (max-width: 650px) {
+            .row-container {
+              flex-direction: column;
+            }
+          }
+      </style>
+
+
+  <script type="text/javascript">
+      (function() {
+          // only want one resizer on the page
+          if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+          document.documentElement.className += " g-resizer-v3-init";
+          // require IE9+
+          if (!("querySelector" in document)) return;
+          function resizer() {
+              var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                  widthById = {};
+              elements.forEach(function(el) {
+                  var parent = el.parentNode,
+                      width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                      minwidth = el.getAttribute("data-min-width"),
+                      maxwidth = el.getAttribute("data-max-width");
+                  widthById[parent.id] = width;
+                  if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                      el.style.display = "block";
+                  } else {
+                      el.style.display = "none";
+                  }
+              });
+              try {
+                  if (window.parent && window.parent.$) {
+                      window.parent.$("body").trigger("resizedcontent", [window]);
+                  }
+                  if (window.require) {
+                      require(['foundation/main'], function() {
+                          require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                              AppCommunicator.triggerResize();
+                          });
+                      });
+                  }
+              } catch(e) { console.log(e); }
+          }
+          document.addEventListener('DOMContentLoaded', resizer);
+          // feel free to replace throttle with _.throttle, if available
+          window.addEventListener('resize', throttle(resizer, 200));        
+          function throttle(func, wait) {
+              // from underscore.js
+              var _now = Date.now || function() { return new Date().getTime(); },
+                  context, args, result, timeout = null, previous = 0;
+              var later = function() {
+                  previous = _now();
+                  timeout = null;
+                  result = func.apply(context, args);
+                  if (!timeout) context = args = null;
+              };
+              return function() {
+                  var now = _now(), remaining = wait - (now - previous);
+                  context = this;
+                  args = arguments;
+                  if (remaining <= 0 || remaining > wait) {
+                      if (timeout) {
+                          clearTimeout(timeout);
+                          timeout = null;
+                      }
+                      previous = now;
+                      result = func.apply(context, args);
+                      if (!timeout) context = args = null;
+                  } else if (!timeout && options.trailing !== false) {
+                      timeout = setTimeout(later, remaining);
+                  }
+                  return result;
+              };
+          }
+         
+      })();
+  </script>
+
+<!-- Insert script from ai2html output -->
+
+    </head>
+    <body>
+
+      <section class="hero is-medium has-bg-img"> 
+        <div class="hero-body"> 
+          <h1 class="title">Has It Always Been This Rainy?</h1>
+          <h2 class="subtitle">Over the past 130 years, Denmark has become 20 percent rainier.</h2>
+          <div class="bottomleft">
+            <p>AI generated image from DALL·E 2</p>
+          </div>
+        </div> 
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="content">
+            <div class="byline">
+              <p><b>By Laura Bejder</b></p>
+            </div>
+            <div class="date">
+              March 1, 2023
+            </div>
+            <p>text </p>
+
+            <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+
+            <p>[chart]</p>
+
+            <p>text text text text text text text text text text text text text text text  text text text text text text text text text text text text text text text text text text text text</p>  
+
+            <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p> 
+
+              <div class="row-container">
+                <div class="column-container">
+                  This is a <strong>column</strong>, a chart will go here This is a <strong>column</strong>, a chart will go here
+                </div>
+                <div class="column-container">
+                  This is <strong>another column</strong>, a chart will go here This is a <strong>column</strong>, a chart will go here
+                </div>
+              </div>    
+
+            <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p> 
+
+            <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+
+            <p>[chart]</p>
+
+            <p>text text text text text text text text text text text text text text text  text text text text text text text text text text text text text text text text text text text text</p>
+
+            <p><i>You can find the code and all the data used in this article on <a href="https://github.com/laurabejder/rain" target="_blank">Github</a>.</i></p>
+
+
+            <p><i>The top image was generated by <a href="https://openai.com/dall-e-2/" target="_blank">DALL·E 2</a> using the prompt “high resolution monet style painting of raindrops falling down in light blue colors”.</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
+  </html>
+
