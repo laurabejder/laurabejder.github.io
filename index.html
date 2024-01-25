@@ -17,10 +17,14 @@
   <link rel="stylesheet" href="https://use.typekit.net/wbx1xpf.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
   <style>
 
     .section {
-      background-image: linear-gradient(#d3d5ee, #cbe0f0);
+      background-image: linear-gradient(#f9f9f9, #f9f9f9);
+      margin-top: -70px;
     }
 
     .content figure {
@@ -29,41 +33,42 @@
     }
 
     .hero {
-      font-family: Martel;
-      background-color: #d3d5ee;
+      font-family: 'fragment mono';
+      background-color: #f9f9f9;
     }
 
     .title {
       color: black;
-      font-family: Martel;
+      font-family: 'fragment mono';
       font-weight: 400;
-      letter-spacing: .05em;
-      margin-bottom: 5px;
       font-size: 36px;
+      margin-bottom: 1px;
+      margin-top: 20px;
     }
 
     .subtitle {
       color: #00111a;
-      font-family: Martel;
+      font-family: 'fragment mono';
       font-weight: 400;
       font-size: 16px;
     }
 
     .category-title {
       color: #333333;
-      font-family: Martel;
+      font-family: 'fragment mono';
       font-size: 19px;
       font-weight: 400;
     }
     
     .link {
       color: #333333;
-      font-family: Martel;
+      font-family: 'fragment mono';
     }
 
     .footer {
-      font-family: Martel;
-      background-color: #cbe0f0;
+      font-family: 'fragment mono';
+      background-color: #f9f9f9;
+      font-size: 19px;
     }
 
     .journalism {
@@ -73,8 +78,8 @@
     }
 
     .tags {
-      font-family: Source Sans Pro;
-      font-size: 16px;
+      font-family: 'fragment mono';
+      font-size: 14px;
     }
 
     .article {
@@ -83,12 +88,12 @@
     }
 
     a:hover {
-      color:#474747;
+      color:#2a00e9;
     }
 
     a {
-      color: black;
-      font-family: Martel;
+      color: #2a00e9;
+      font-family: 'fragment mono';
     }
 
     img {
@@ -101,18 +106,36 @@
     }
 
     .article-title {
-      font-family: Martel;
+      font-family: 'fragment mono';
       font-size: 18px;
       font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .outlet {
+      color: black;
+      font-family: 'fragment mono';
+      font-weight: 600;
+      letter-spacing: .05em;
+      margin-bottom: 5px;
+      font-size: 14px;
     }
 
     p {
-      font-family: Martel;
-      font-size: 16px;
+      font-family: 'fragment mono';
+      font-size: 14px;
     }
 
     .contact-info {
       text-align: justify;    
+    }
+
+    span {
+      font-family: 'fragment mono';
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: black;
     }
 
 
@@ -123,54 +146,100 @@
 
     <!-- Introductory paragraph -->
 
-    <section class="hero is-halfheight">
+    <section class="hero is-small">
       <div class="hero-body">
-        <div class="column is-two-thirds-desktop is-half-tablet is-offset-one-fifth">
-          <p class="title my-6">
+        <div class="column is-half-desktop is-half-tablet is-offset-one-quarter">
+          <p class="title">
           Hi, I'm Laura Bejder!</p> 
-            <p class="subtitle">I am a Danish data and visual journalist based in NYC. Before moving here, I used data to cover Danish and European politics at one of Denmark’s leading online political news outlets <u><a href="https://www.altinget.dk/" target="_blank">altinget.dk</a></u>.</p> 
-
-            <p class="subtitle">I am currently pursuing a Master of Science in Data Journalism at Columbia Graduate School of Journalism.</p>
+          <!-- Social media links -->
+          <div class="contact mb-5">
+            <div class="contact-info is-two-thirds-desktop is-half-tablet is-offset-one-fifth">
+              <a href="mailto:laurabejder@gmail.com?subject=Reaching%20out&body=Hi%20Laura%2C%0A%0A" aria-label="Send Laura Bejder an email" target="_blank">
+                <u>email</u>
+              </a>&nbsp;
+              <a href="https://github.com/laurabejder" aria-label="Go to Laura Bejder's GitHub" target="_blank">
+                <u>github</u>
+              </a>&nbsp;
+              <a href="https://www.linkedin.com/in/laura-bejder-jensen-812536171/" aria-label="Go to Laura Bejder's linkedin profile" target="_blank">
+                <u>linkedin</u>
+              </a> &nbsp;
+              <a href="https://github.com/laurabejder/laurabejder.github.io/blob/main/files/laurabejder_resume.pdf" aria-label="View Laura Bejder's resume" target="_blank">
+                <u>resume</u></a>
+            </div>
+          </div>
+          <!-- End of social media links -->
+            <p class="subtitle">I am a Danish data and visual journalist with experience covering politics, business, and finance in the US and Europe.</p> 
+            <p class="subtitle">I've worked as the data intern at <a href="https://www.bloomberg.com/"><u>Bloomberg News</u></a> and previously, I used data to cover Danish and European politics at one of Denmark’s leading online political news outlets <a href="https://www.altinget.dk/" target="_blank"> <u>altinget.dk</u></a>. I am a graduate of Columbia Journalism School, where I completed a Master's in Data Journalism.</p> 
+            <p class="subtitle">I love anything involving data analysis and graphics, and I am excited to use those tools to find and tell stories. In my free time, I love to turn any creative idea into knitwear</p>
         </div>
-        </div>
-
-      <!-- Social media links -->
-
-      <div class="contact mb-5">
-        <div class="contact-info has-text-centered">
-          <a href="mailto:lj2569@columbia.edu?subject=Reaching%20out&body=Hi%20Laura%2C%0A%0A" aria-label="Send Laura Bejder an email" target="_blank">
-            <u>email</u>
-          </a>&nbsp;
-          <a href="https://github.com/laurabejder" aria-label="Go to Laura Bejder's GitHub" target="_blank">
-            <u>github</u>
-          </a>&nbsp;
-          <a href="https://www.linkedin.com/in/laura-bejder-jensen-812536171/" aria-label="Go to Laura Bejder's linkedin profile" target="_blank">
-            <u>linkedin</u>
-          </a> &nbsp;
-          <a href="https://twitter.com/laurabejder/" aria-label="Go to Laura Bejder's twitter profile" target="_blank">
-            <u>twitter</u>
-          </a> &nbsp;
-          <a href="https://github.com/laurabejder/laurabejder.github.io/blob/main/files/laurabejder_resume.pdf" aria-label="View Laura Bejder's resume" target="_blank">
-            <u>resume</u></a>
+        <div class="column is-half-desktop is-half-tablet is-offset-one-quarter">
+          <span>Reporting and Data Journalism</span>
         </div>
       </div>
     </section>
 
     <!-- Links to journalistic work -->
 
-    <section class="section">
-
-      <div class="journalism">
-        <div class="subtitle">
-          <div class="category-title">
-            Reporting and Data Journalism
-          </div> 
-        </div> 
-        <hr>
+      <section class="section">
         <!-- Articles with pictures and links -->
-        
         <div class="columns is-multiline content">
-          <div class="column is-one-third">
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="article p-3">
+              <h4>
+                <a class="link" href="https://www.bloomberg.com/news/articles/2023-11-29/black-friday-sales-fall-at-some-key-retailers-in-threat-to-holiday-season?srnd=undefined" aria-label="Go to and read the article about how Denmark has become rainier." target="_blank">
+                  <figure class="image is-4by3 mb-3 mt-2">
+                    <img alt="SOOOOOOOMETHING" src="images/black_friday.png">
+                  </figure>
+                  <div class="article-title">Black Friday Sales Signal Tough Holidays for US Retailers</div>
+                </h4>
+                <div class="outlet">Bloomberg News</div>
+                <p>I analyzed daily sales data to show that US companies relying heavily on Black Friday sales, had seen an overall decline in Black Friday sales compared to previous years.</a></p>
+                <div class="tags"><strong>Tools:</strong>&nbsp;Python/pandas</div>
+              </div>    
+            </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="article p-3">
+              <h4>
+                <a class="link" href="https://www.bloomberg.com/news/features/2023-11-21/black-friday-shopping-behavior-in-2023-may-help-predict-recession?srnd=undefined" aria-label="Go to and read the article about how Denmark has become rainier." target="_blank">
+                  <figure class="image is-4by3 mb-3 mt-2">
+                    <img alt="SOOOOOOOMETHING" src="images/recession.png">
+                  </figure>
+                  <div class="article-title">Is the US Headed for a Recession? Look at What Richer Americans Do on Black Friday</div>
+                </h4>
+                <div class="outlet">Bloomberg News</div>
+                <p>I analysed consumer spending data on a group of higher end brands and showed a decline in sales which could point to a slowing down of the overall consumer economy. The analysis was a two-step process: first identifying the companies and then analyzing the development in their sales.</a></p>
+                <div class="tags"><strong>Tools:</strong>&nbsp;Python/pandas</div>
+              </div>    
+            </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="article p-3">
+              <h4>
+                <a class="link" href="https://www.bloomberg.com/news/articles/2023-10-31/uaw-strike-ups-drivers-writers-union-mark-record-wins-for-us-labor-movement?srnd=undefined" aria-label="Go to and read the article about how Denmark has become rainier." target="_blank">
+                  <figure class="image is-4by3 mb-3 mt-2">
+                    <img alt="SOOOOOOOMETHING" src="images/union.png">
+                  </figure>
+                  <div class="article-title">Unions Are Winning Big for the First Time in Decades</div>
+                </h4>
+                <div class="outlet">Bloomberg News</div>
+                <p>I parced over several decades of contracts for major US workers unions to show that the recent years' union agreements has brought forward some of the biggest wins for workers including higher wages and better benefits.</a></p>
+                <div class="tags"><strong>Tools:</strong>&nbsp;</div>
+              </div>    
+            </div>
+          <div class="column is-one-third-desktop is-half-tablet">
+            <div class="article p-3">
+              <h4>
+                <a class="link" href="https://www.bloomberg.com/news/articles/2023-10-20/striking-uaw-workers-at-us-automakers-are-losing-the-race-against-inflation?srnd=undefined" aria-label="Go to and read the article about how Denmark has become rainier." target="_blank">
+                  <figure class="image is-4by3 mb-3 mt-2">
+                    <img alt="SOOOOOOOMETHING" src="images/uaw.png">
+                  </figure>
+                  <div class="article-title">Striking UAW Workers Are Losing the Race Against Inflation</div>
+                </h4>
+                <div class="outlet">Bloomberg News</div>
+                <p></a>I collected the historical wages of UAW auto workers from union contracts and adjusted them by various inflation indices to show how the real wages have declined over the past decades – prior to the most recent UAW auto agreements.</p>
+                <div class="tags"><strong>Tools:</strong>&nbsp; Python/pandas</div>
+              </div>    
+            </div>
+          <div class="column is-one-third-desktop is-half-tablet">
             <div class="article p-3">
               <h4>
                 <a class="link" href="https://columbianewsservice.com/2023/02/22/hidden-partnerships-who-is-behind-your-online-education/" aria-label="Go to and read the article about how Denmark has become rainier." target="_blank">
@@ -179,11 +248,12 @@
                   </figure>
                   <div class="article-title">Hidden Partnerships: Who is Behind Your Online Education?</div>
                 </h4>
+                <div class="outlet">Columbia Journalism School project</div>
                 <p>Investigative project about the opaque partnerships between private for-profit companies and US public universities. The data analysed was collected by filing more than 100 foia requests to public universities.</a></p>
                 <div class="tags"><strong>Tools:</strong>&nbsp;FOIA, graph databases</div>
               </div>    
             </div>
-          <div class="column is-one-third">
+          <div class="column is-one-third-desktop is-half-tablet">
             <div class="article p-3">
               <h4>
                 <a class="link" href="https://laurabejder.com/knitting/" aria-label="Go to and read the article about women knitting breast protheses after undergoing mastectomies" target="_blank">
@@ -192,11 +262,12 @@
                   </figure>
                   <div class="article-title">Medical Knitting: How Breast Cancer Survivors Handle Mastectomies One Knitted Knocker at a Time</div>
                 </h4>
+                <div class="outlet">Columbia Journalism School project</div>
                 <p>Data driven story about how breast cancer survivors use knitting to create breast prostheses and their popularity on the knitting platform Ravelry.com.</a></p>
-                <div class="tags"><strong>Tools:</strong>&nbsp;python/pandas, illustrator, scraping, HTML, ai2html</div>
+                <div class="tags"><strong>Tools: </strong>python/pandas, illustrator, scraping, HTML, ai2html</div>
               </div>    
             </div>
-            <div class="column is-one-third">
+            <div class="column is-one-third-desktop is-half-tablet">
               <div class="article p-3">
                 <h4>
                   <a class="link" href="https://columbianewsservice.com/2022/10/25/immigrants-at-a-brooklyn-street-corner-we-are-waiting-for-the-job-that-falls/" aria-label="Go to and read the article about latina day-laborers' working conditions" target="_blank">
@@ -205,11 +276,12 @@
                     </figure>
                     <div class="article-title">Latina immigrants at a Brooklyn Street Corner: "We are Waiting for the Job that Falls"</div>
                   </h4>
+                  <div class="outlet">Columbia Journalism School project</div>
                   <p>At a street corner in Brooklyn, Latina immigrants assemble in search of a day's work but poor labor control and shortage of employment makes them vulnerable to low wages and labor violations.</a></p>
                   <div class="tags"><strong>Tools:</strong>&nbsp;reporting</div>
                 </div>    
               </div>
-          <div class="column is-one-third">
+          <div class="column is-one-third-desktop is-half-tablet">
             <div class="article p-3">
               <h4>
                 <a class="link" href="https://laurabejder.com/federal-judges-appointment/" aria-label="Go to and read the article about Senate votes on federal circuit judges" target="_blank">
@@ -218,11 +290,12 @@
                   </figure>
                   <div class="article-title">Senate confirmations of circuit court judges have become more politically divided</div>
                 </h4>
+                <div class="outlet">Columbia Journalism School project</div>
                 <p>The past 20 years, the Senate has moved from a broad bipartisan consensus on most confirmations of federal circuit judges to now confirming judges on slim partisan majorities.</a></p>
-                <div class="tags"><strong>Tools:</strong>&nbsp;scraping, python/pandas, datawrapper, R</div>
+                <div class="tags"><strong>Tools: </strong>scraping, python/pandas, datawrapper, R</div>
               </div>    
             </div>
-            <div class="column is-one-third">
+            <div class="column is-one-third-desktop is-half-tablet">
                   <div class="article p-3">
                     <h4>
                       <a class="link" href="https://medium.com/labor-new-york/proposed-congestion-prices-spike-rage-among-rideshare-drivers-5c6ee2fd68d0" aria-label="Go to and read the news article on NYC rideshare drivers protesting the MTA's proposed congestion fees" target="_blank">
@@ -231,11 +304,12 @@
                         </figure>
                         <div class="article-title">Proposed congestion fees spike rage among rideshare drivers</div>
                       </h4>
+                      <div class="outlet">Columbia Journalism School project</div>
                       <p> NYC rideshare drivers protested in front of the MTA's Manhattan office. The drivers feared that the plan to impose congestion charges could put them out of business.</a></p>
                       <div class="tags"><strong>Tools:</strong>&nbsp;reporting</div>
                     </div>
                   </div>
-              <div class="column is-one-third">
+              <div class="column is-one-third-desktop is-half-tablet">
                 <div class="article p-3">
                   <h4>
                     <a class="link" href="https://laurabejder.github.io/european_energy_prices/" aria-label="Go to the auto updating webpage displaying energy prices in Europe" target="_blank">
@@ -244,11 +318,12 @@
                       </figure>
                       <div class="article-title">The Power Scraper: Get your daily update on energy prices in Europe</div>
                     </h4>
-                    <p> In the current energy crisis, this automated webscraper provides the necessary daily update on tomorrow's energy prices in Europe. </a></p>
-                    <div class="tags"><strong>Tools:</strong>&nbsp;scraping, python/pandas, datawrapper, HTML</div>
+                    <div class="outlet">Columbia Journalism School project</div>
+                    <p> I wrote a python script that creates an automated webscraper that scrapes the energy prices in Europe daily. The data is automatically visualized using updating datawrapper graphics.</a></p>
+                    <div class="tags"><strong>Tools: </strong>scraping, python/pandas, datawrapper, HTML</div>
                   </div>
                 </div>
-                  <div class="column is-one-third">
+                  <div class="column is-one-third-desktop is-half-tablet">
                     <div class="article p-3">
                       <h4>
                         <a class="link" href="https://medium.com/labor-new-york/more-retail-workers-are-unionizing-is-covid-the-reason-daecc32792ad" aria-label="Go to and read the article on the increased unionization in the retail industry" target="_blank">
@@ -257,11 +332,12 @@
                           </figure>
                           <div class="article-title">More Retail Workers are Unionizing. Is COVID the Reason?</div>
                         </h4>
+                        <div class="outlet">Columbia Journalism School project</div>
                         <p> In the first six months of 2022, 75 retail workplaces held union elections. This is an increase from 29 elections in the first six months of 2021 and 56 in the second half of 2021.</a></p>
                         <div class="tags"><strong>Tools:</strong>&nbsp;reporting, datawrapper</div>
                       </div>
                     </div>
-                    <div class="column is-one-third">
+                    <div class="column is-one-third-desktop is-half-tablet">
                       <div class="article p-3">
                         <h4>
                           <a class="link" href="https://laurabejder.com/bike-safety-in-nyc/" aria-label="Go to and read the article about bike safety in New York City" target="_blank">
@@ -270,30 +346,18 @@
                             </figure>
                             <div class="article-title">For bikers, New York is more dangerous than Copenhagen, but not all areas are created equal</div>
                           </h4>
+                          <div class="outlet">Columbia Journalism School project</div>
                           <p>New York City is expanding its bike infrastructure to accommodate increased traffic, but the city is still dangerous by international standards.</a></p>
-                          <div class="tags"><strong>Tools:</strong>&nbsp;python/pandas, JavaScript, datawrapper, HTML, QGIS</div>
+                          <div class="tags"><strong>Tools: </strong>python/pandas, JavaScript, datawrapper, HTML, QGIS</div>
                         </div>    
                       </div>
-                    <div class="column is-one-third">
-                    <div class="article p-3">
-                      <h4>
-                        <a class="link" href="https://laurabejder.com/rain/" aria-label="Go to and read the article about how Denmark has become rainier." target="_blank">
-                          <figure class="image is-4by3 mb-3 mt-2">
-                            <img alt="SOOOOOOOMETHING" src="images/rain.png">
-                          </figure>
-                          <div class="article-title">Has It Always Been This Rainy?</div>
-                        </h4>
-                        <p>Since the late 19th century, Denmark has become 20 percent rainier. Climate change and higher temperatures have caused wetter winters and more extreme weather in the summers - a trend that is likely to continue in the future.</a></p>
-                        <div class="tags"><strong>Tools:</strong>&nbsp;python/pandas, illustrator, HTML, ai2html</div>
-                      </div>    
-                    </div>
                   </div>
                 </div>
               </section>
               <footer class="footer">
                 <div class="content has-text-centered">
                   <p>
-                    © 2023 – Laura Bejder Jensen.
+                    © 2024 – Laura Bejder Jensen
                   </p>
                 </div>
               </footer>
